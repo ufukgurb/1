@@ -1,0 +1,120 @@
+﻿@model ena3.Models.ResimFilomuz
+
+@{
+    ViewBag.Title = "Delete";
+}
+
+<h2>Delete</h2>
+
+<h3>Are you sure you want to delete this?</h3>
+<div>
+    <h4>ResimFilomuz</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        @*<dt>
+            @Html.DisplayNameFor(model => model.filoResimUrl)
+        </dt>*@
+
+        @*<dd>
+            @Html.DisplayFor(model => model.filoResimUrl)
+        </dd>*@
+
+        <dt>
+            @Html.DisplayNameFor(model => model.aracAdi)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.aracAdi)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ozellik1)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ozellik1)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ozellik2)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ozellik2)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ozellik3)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ozellik3)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ozellik4)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ozellik4)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ozellik5)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ozellik5)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ozellik6)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ozellik6)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ozellik7)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ozellik7)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ozellik8)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ozellik8)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.durum)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.durum)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.durum2)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.durum2)
+        </dd>
+
+    </dl>
+
+    @using (Html.BeginForm()) {
+        @Html.AntiForgeryToken()
+
+        <div class="form-actions no-color">
+            <input type="submit" value="Delete" class="btn btn-default" /> |
+            @Html.ActionLink("Back to List", "Index")
+        </div>
+    }
+</div>

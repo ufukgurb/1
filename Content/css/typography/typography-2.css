@@ -1,0 +1,82 @@
+@import url(https://fonts.googleapis.com/css?family=Alegreya+Sans:400,900,800,700,500,300);
+/**
+ * ===============================
+ *  Defult CSS 
+ * ===============================
+ */
+html * {
+  font-family: 'Alegreya Sans', sans-serif;
+}
+body {
+  font-family: 'Alegreya Sans', sans-serif;
+}
+a {
+  font-family: 'Alegreya Sans', sans-serif;
+}
+p {
+  font-family: 'Alegreya Sans', sans-serif;
+}
+/* Heading Style */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Alegreya Sans', sans-serif;
+}
+/**
+ * ====================================
+ *  Every Section Headline Defult Class
+ * ====================================
+ */
+.section-heading {
+  font-family: 'Alegreya Sans', sans-serif;
+}
+.section-header .sub-title {
+  font-family: 'Alegreya Sans', sans-serif;
+}
+/**
+ * ===============================
+ *   Defult Button Style
+ * ===============================
+ */
+.btn {
+  font-family: 'Alegreya Sans', sans-serif;
+}
+.btn .serif,
+.btn .serif * {
+  font-family: serif;
+}
+.btn .sans-serif,
+.btn .sans-serif * {
+  font-family: 'Alegreya Sans', sans-serif;
+}
+/**
+ * ===================================
+ * Subscription and contact  "MESSAGE"
+ * ===================================
+ */
+.subscription-success,
+.subscription-failed,
+.email-success,
+.email-failed,
+.email-loading {
+  font-family: 'Alegreya Sans', sans-serif;
+}
+/**
+ * =========================
+ * Form Style 
+ * =========================
+ */
+.single-form .form-control {
+  font-family: 'Alegreya Sans', sans-serif;
+}
+/**
+ * =========================
+ * Pricing Table
+ * =========================
+ */
+.pricing-table .each-table .table-single .meta-price {
+  font-family: 'Alegreya Sans', sans-serif;
+}

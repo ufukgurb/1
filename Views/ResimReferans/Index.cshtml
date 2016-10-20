@@ -1,0 +1,51 @@
+﻿@model IEnumerable<ena3.Models.ResimReferans>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>REFERANSLAR</h2>
+
+<p>
+    @Html.ActionLink("Yeni Referans Oluştur", "YeniReferans","ReferansVip")
+</p>
+<table class="table">
+    <tr>
+        @*<th>
+            @Html.DisplayNameFor(model => model.referansResimUrl)
+        </th>*@
+        <th>
+            @Html.DisplayNameFor(model => model.referansResimAdi)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.durum)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.durum2)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        @*<td>
+            @Html.DisplayFor(modelItem => item.referansResimUrl)
+        </td>*@
+        <td>
+            @Html.DisplayFor(modelItem => item.referansResimAdi)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.durum)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.durum2)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.ID }) |
+            @Html.ActionLink("Details", "Details", new { id=item.ID }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.ID })
+        </td>
+    </tr>
+}
+
+</table>

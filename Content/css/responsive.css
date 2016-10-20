@@ -1,0 +1,477 @@
+/*------------------------------------------------------------------
+[Table of contents]
+
+[ DEFULT INDEX NUMBER ]
+1. Defult css
+    -- Before this comment ( START MAIN CSS STYLE ) defult css continue .
+
+2. Navigation / .main-navbar-top
+    2.1. Navbar icon style /.nav-trigger
+
+3. Navigation 2 / .main-navbar-top-2
+4. Header-bg-1 / .header-bg-1
+
+5. Features section 1 / .features-section-1
+6. Features section 2 / .features-section-2
+7. Features section 3 / .features-section-3
+8. Features section 4 / .features-section-4
+9. Features section 5 / .features-section-5
+10. Features section 6 / .features-section-6
+11. Features section 7 / .features-section-7
+12. Features section 8 / .features-section-8
+13. Features section 9 / .features-section-9
+14. Features section 10 / .features-section-10
+15. Features section 11 / .features-section-11
+16. Features section 12 / .features-section-12
+17. Features section 13 / .features-section-13
+18. Features section 14 / .features-section-14
+18. Features section 15 / .features-section-15
+18. Features section 16 / .features-section-16
+18. Features section 17 / .features-section-17
+18. Features section 18 / .features-section-18
+
+1. Footer 1 / .footer-section-1
+
+
+
+
+-------------------------------------------------------------------*/
+/*------------------------------------------------------------------
+[ Color codes ]
+    
+    [ Light ]
+        Main color:         #00BFA5 (Green)     [ This is the main color in Template ]
+        Background 1:       #FFFFFF             [ Background color 1 ]
+        Background 2:       #F6F6F6             [ Background color 2 ]
+        Light color:        #FFFFFF             [ Using text color and some ware ]
+        Dark color:         #373737             [ Using text color and some ware ]
+        Footer color:       #000000;            [ Footer Background Color ]
+        Shadow color:       #000000;            [ All type of shadow color ]
+        Overlay color:      #050C1A;            [ Background Overlay color ]
+
+
+[ This Templage Using 1 Coller Scheme ]
+
+    [ Main color ]
+        1. Orange:          #FBAD44;
+        2. Apple:           #56CC35;
+        3. Purple:          #5635CC;
+        4. Sky Blue:        #7EBFE9;
+
+    [Background color ]
+        1. Dark:            #F6F6F6;
+        2. Light:           #FFFFFF;
+    
+    [ Shadow color ]
+        shadow-color:       rgba(0, 0, 0, 0.12);
+
+    [ Overlay color]
+        overlay-color:      rgba(0, 0, 0, 0.6);
+
+
+
+[ Using Color Code ]
+    h1 [ All ]      Color: #373737                      [ Gray ]
+    h2 [ Light ]    Color: #373737                      [ Gray 100% opacity ]
+    h3 [ Light ]    Color: #373737                      [ Gray 100% opacity ]
+    p  [ Light ]    Color: rgba(55, 55, 55, 0.7)        [ Gray 70% opacity ]
+    a  [ Normal ]   Color: main-color                   [ main-color is changed particular color scheme ]
+    a  [ Hover ]    color: as required                  [ as required ]
+
+-------------------------------------------------------------------*/
+/*------------------------------------------------------------------
+[Typography]
+
+    [ There are using two different font typography ]
+        Typography 1: Exo Font;
+        Typography 2: Alegrey Sans;
+        Typography 3: Montserrat and Roboto font;
+        Typography 4: Exo and Poppins font;
+    
+    [ Other Typography style are same ]
+    Body :
+        font-style:     normal;
+        font-size:      15px;
+
+    Header:
+        font-style:     normal;
+        font-size:      40px;
+
+    h1:
+        font-style:     normal;
+        font-size:      40px;
+
+    h2, h3, h4, h5, h6:
+        font-style:     normal;
+
+    Section Heading:
+        font-style:     normal;
+        font-size:      35px;
+
+    p:  
+        font-style:     normal;
+        font-size:      15px;
+
+
+    Notes:  This Template typography 1 Defult [ font-family: 'Exo', sans-serif; ] [ font-style: normal; ] [ font-size: 15px; ]
+    Notes:  This Template typography 2 Defult [ font-family: 'Alegreya Sans', sans-serif; ] [ font-style: normal; ] [ font-size: 15px; ]
+    Notes:  This Template typography 3 Defult [ font-family: 'Roboto', sans-serif; ] [ font-style: normal; ] [ font-size: 15px; ]
+    Notes:  This Template typography 4 Defult [ font-family: 'Poppins', sans-serif; ] [ font-style: normal; ] [ font-size: 15px; ]
+
+-------------------------------------------------------------------*/
+@media (max-width: 991px) {
+  /**
+	 * ===========================
+	 * Features Section 1
+	 * ===========================
+	 */
+  .features-section-1 .part-1 .features-content {
+    margin-top: 22px;
+  }
+  /**
+	 * ===========================
+	 * Features Section 3
+	 * ===========================
+	 */
+  .features-section-3 .full-screen .half-screen {
+    width: 60%;
+    top: 55px;
+  }
+  .features-section-3 .full-screen .features-content {
+    margin: 15px 0;
+  }
+  /**
+	 * =======================
+	 * Features Section 5
+	 * =======================
+	 */
+  .features-section-5 .hidden-shape:nth-of-type(1) {
+    top: 40%;
+  }
+  .features-section-5 .part-2 .features-content {
+    margin-top: 0px;
+    text-align: center;
+  }
+  .features-section-5 .part-2 .section-header {
+    text-align: center;
+  }
+  /**
+	 * =======================
+	 * Features Section 7
+	 * =======================
+	 */
+  .features-section-7 .media-left img {
+    width: 80px;
+  }
+  .features-section-7 .media-body {
+    padding-left: 17px;
+  }
+  .features-section-7 .media-body .inner {
+    padding: 15px;
+  }
+  .features-section-7 .media-body .inner::before {
+    border-width: 8px;
+    left: -19px;
+  }
+  /**
+	 * ==========================
+	 * Features Section 16
+	 * ==========================
+	 */
+  .features-section-16 .each-item .inner {
+    width: 150px;
+    height: 150px;
+  }
+  /**
+	 * ==========================
+	 * Features Section 17
+	 * ==========================
+	 */
+  .features-section-17 .each-item .media-left img {
+    width: 120px;
+  }
+  .features-section-17 .each-item .media-body {
+    padding: 25px;
+  }
+  /**
+	 * ====================================
+	 * Footer Style 1
+	 * ====================================
+	 */
+  .footer-section-1,
+  .footer-section-1 .title {
+    text-align: center !important;
+  }
+  .footer-section-1 .about .logo {
+    margin: auto;
+    float: none;
+  }
+  .footer-section-1 .about .nav {
+    display: inline-block;
+  }
+  .footer-section-1 .other-link {
+    margin-top: 40px;
+  }
+  .footer-section-1 .round-shape {
+    width: 200px;
+    height: 200px;
+    left: 50%;
+    top: 50%;
+    margin-left: -100px;
+    margin-top: -100px;
+  }
+  .footer-section-1 .round-shape::before {
+    width: 270px;
+    height: 270px;
+    left: 50%;
+    top: 50%;
+    margin-left: -135px;
+    margin-top: -135px;
+  }
+  .footer-section-1 .round-shape::after {
+    width: 340px;
+    height: 340px;
+    left: 50%;
+    top: 50%;
+    margin-left: -170px;
+    margin-top: -170px;
+  }
+}
+@media (max-width: 767px) {
+  /**
+	 * =======================
+	 * Navigation
+	 * =======================
+	 */
+  .main-navbar-top .navbar-header .navbar-toggle {
+    margin-top: 18px;
+    margin-bottom: 18px;
+  }
+  .main-navbar-top .navbar-collapse {
+    border-top: 1px solid;
+  }
+  .main-navbar-top .navbar-nav li {
+    float: left;
+  }
+  .main-navbar-top .navbar-nav li .btn-nav {
+    padding: 15px 13px;
+  }
+  /**
+	 * ===============================
+	 * Header Style 1
+	 * ===============================
+	*/
+  .header .mr-big-top {
+    margin-top: 150px;
+  }
+  .header .mr-big-bottom {
+    margin-bottom: 150px;
+  }
+  .header .mr-big {
+    margin: 150px 0 150px 0;
+  }
+  .header .bottom-part .apple {
+    left: 50%;
+    margin-left: -92px !important;
+  }
+  /**
+	 * ===========================
+	 * Features Section 1
+	 * ===========================
+	 */
+  .features-section-1 .part-1 .features-content {
+    padding-left: 15px;
+  }
+  /**
+	 * ===========================
+	 * Features Section 2
+	 * ===========================
+	 */
+  .features-section-2 .contact-address a span {
+    font-size: 18px;
+  }
+  .features-section-2 .contact-address a .number {
+    padding: 8px 2px;
+  }
+  /**
+	 * ===========================
+	 * Features Section 3
+	 * ===========================
+	 */
+  .features-section-3 .full-screen .half-screen {
+    width: 100%;
+    top: 55px;
+  }
+  .features-section-3 .clients-logo {
+    margin-top: 45px;
+  }
+  .features-section-3 .clients-logo .nav li {
+    width: 50%;
+  }
+  .features-section-3 .clients-logo .nav li a {
+    width: 85%;
+    display: inline-block;
+  }
+  /**
+	 * =======================
+	 * Features Section 5
+	 * =======================
+	 */
+  .features-section-5 .hidden-shape.image {
+    background-size: cover;
+    height: 130px;
+  }
+  .features-section-5 .sync1 .item {
+    padding: 25px 0px 0 0px;
+  }
+  .features-section-5 .each-table .table-single.left {
+    left: 0px;
+  }
+  /**
+	 * =======================
+	 * Features Section 6
+	 * =======================
+	 */
+  .pricing-table .each-table {
+    margin-bottom: 15px;
+  }
+  .pricing-table.pricing-table-js .each-table .left,
+  .pricing-table.pricing-table-js .each-table .right {
+    z-index: 2;
+    right: 0;
+    left: 0;
+  }
+  .pricing-table.pricing-table-js .each-table .table-single {
+    transform: translateX(0) translateY(0) translateZ(0) rotate(0deg) scale(1);
+    -o-transform: translateX(0) translateY(0) translateZ(0) rotate(0deg) scale(1);
+    -ms-transform: translateX(0) translateY(0) translateZ(0) rotate(0deg) scale(1);
+    -moz-transform: translateX(0) translateY(0) translateZ(0) rotate(0deg) scale(1);
+    -webkit-transform: translateX(0) translateY(0) translateZ(0) rotate(0deg) scale(1);
+  }
+  /**
+	 * =======================
+	 * Features Section 7
+	 * =======================
+	 */
+  .features-section-7 .media-left img {
+    width: 50px;
+  }
+  /**
+	 * =======================
+	 * Features Section 10
+	 * =======================
+	 */
+  .features-section-10 .part-2 .media {
+    margin-bottom: 15px;
+  }
+  /**
+	 * ===============================
+	 * Features Section 12
+	 * ===============================
+	 */
+  .features-section-12 .single-form .form-control {
+    text-align: center;
+  }
+  .features-section-12 .each-address {
+    margin-bottom: 20px;
+  }
+  .features-section-12 .each-address .media-left,
+  .features-section-12 .each-address .media-body {
+    display: block;
+    width: auto;
+  }
+  .features-section-12 .each-address .media-left {
+    padding-right: 0px !important;
+  }
+  /**
+	 * ==========================
+	 * Features Section 13
+	 * ==========================
+	 */
+  .features-section-13 .faq-group .faq-trigger,
+  .features-section-13 .faq-group .faq-content {
+    padding: 25px 50px 25px 50px;
+  }
+  .features-section-13 .faq-group .faq-trigger:before {
+    left: 17px;
+  }
+  /**
+	 * ==========================
+	 * Features Section 16
+	 * ==========================
+	 */
+  .features-section-16 .each-item {
+    margin-bottom: 30px;
+  }
+  .features-section-16 .each-item .inner::after {
+    width: initial;
+    height: 100%;
+    border-top: 0px dotted;
+    border-left: 2px dotted;
+    left: 50%;
+    top: 100%;
+    transform: translateX(-50%) translateY(0) translateZ(0) rotate(0deg) scale(1);
+    -o-transform: translateX(-50%) translateY(0) translateZ(0) rotate(0deg) scale(1);
+    -ms-transform: translateX(-50%) translateY(0) translateZ(0) rotate(0deg) scale(1);
+    -moz-transform: translateX(-50%) translateY(0) translateZ(0) rotate(0deg) scale(1);
+    -webkit-transform: translateX(-50%) translateY(0) translateZ(0) rotate(0deg) scale(1);
+  }
+  .features-section-16 .each-item:last-child {
+    margin-bottom: 0px;
+  }
+  .features-section-16-2 .part-2 {
+    top: -75px;
+  }
+  /**
+	 * ==========================
+	 * Features Section 17
+	 * ==========================
+	 */
+  .features-section-17 .each-item {
+    margin-bottom: 15px;
+  }
+  .features-section-17 .each-item .media-left img {
+    width: 80px;
+  }
+  .client-logo li {
+    margin-left: 13px;
+    margin-right: 13px;
+  }
+  /**
+	 * ==========================
+	 * Features Section 19
+	 * ==========================
+	 */
+  .features-section-19 .speakers-content .each-item .media-left img {
+    width: 60px;
+  }
+  .features-section-19 .speakers-content .each-item .media-body {
+    padding-left: 10px;
+  }
+  .features-section-19 .speakers-content .each-item .media-body .inner {
+    padding: 15px;
+  }
+  .features-section-19 .speakers-content .each-item .media-body .panel-heading,
+  .features-section-19 .speakers-content .each-item .media-body .panel-body,
+  .features-section-19 .speakers-content .each-item .media-body .panel-footer {
+    padding: 0px;
+    margin-top: 20px;
+  }
+  .features-section-19 .speakers-content .each-item .media-body .panel-heading {
+    margin-top: 0px;
+  }
+  /**
+	 * ====================================
+	 * Footer Style 1
+	 * ====================================
+	 */
+  .footer-section-1 .footer-heading .hidden-shape {
+    font-size: 117px;
+  }
+  .footer-section-1 .other-link .each-section {
+    margin-bottom: 30px;
+  }
+  .footer-section-1 .other-link .each-section:last-child {
+    margin-bottom: 0px;
+  }
+}

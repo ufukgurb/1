@@ -1,0 +1,1138 @@
+// This file import helping some function
+@import "../../bootstrap/less/variables.less";
+
+// This file import helping some function
+@import "../less-function.less";
+
+// VARIABLES 
+@import "../variable.less";
+@import "variable.less";
+
+
+// COLOR VARIABLES
+@main-color-1:      #008DD5;            // Template Main Color
+
+
+
+
+
+/**
+ * ===============================
+ *  Defult CSS 
+ * ===============================
+ */
+body{
+    color:                  fade(@light-color, 70%);
+}
+
+a{
+    &:hover {
+        color: @main-color-1;
+    }
+}
+
+p{
+    color:              fade(@light-color, 70%);
+}
+
+
+
+
+/**
+ * ====================================
+ *  Every Section Headline Defult Class
+ * ====================================
+ */
+.section-heading {
+    color: fade(@light-color, 100%);
+}
+
+.section-header-separator {
+    &,
+    &::before,
+    &::after {
+        background-color: @main-color-1;
+    }
+}
+
+.section-header {
+    .sub-title {
+        color: fade(@light-color, 70%);
+    }
+
+    .light {
+        color: @main-color-1;
+    }
+}
+
+.light {
+    .section-heading {
+        color: fade(@light-color, 100%);
+    }
+
+    .section-header,
+    &.section-header {
+        .sub-title {
+            color: fade(@light-color, 75%);
+        }
+
+        .light {
+            color: @main-color-1;
+        }
+    }
+
+}
+
+section {
+    &.section {
+        &,
+        &.bg-light {
+            background-color: @background-1;
+        }
+
+        &.bg-dark {
+            background-color: @background-2;
+        }
+    }
+}
+
+
+
+/**
+ * ===============================
+ *  Section Top and Bottom padding  
+ * ===============================
+ */
+.section-separator-line {
+    border-color: fade(@shadow-color, 3%);
+}
+
+
+
+/**
+ * ====================================
+ * Background Overlay Color
+ * ====================================
+ */
+.overlay-color-dark {
+    background-color: fade(@overlay-color, 55%);
+}
+.overlay-color-light {
+    background-color: fade(@background-1, 70%);
+}
+.overlay-color-sky-blue {
+    background-color: fade(darken(@main-color-1, 42%), 75%);
+}
+.overlay-image {
+    background-color: fade(@shadow-color, 25%);
+}
+.body-video-bg {
+    .overlay-image {
+        background-color: fade(@shadow-color, 45%);
+    }
+}
+
+
+
+
+/**
+ * ===============================
+ *   Defult Button Style
+ * ===============================
+ */
+.btn {
+    color: @light-color;
+
+    &:hover,
+    &:focus {
+        color: @light-color;
+    }
+
+    &.btn-fill {
+        background-color: @main-color-1;
+
+        &:hover {
+            background-color: darken(@main-color-1, 5%);
+        }
+    }
+
+    &.btn-border {
+        border-color: fade(@light-color, 100%);
+
+        &:hover {
+            background-color: darken(@main-color-1, 5%);
+            border-color: darken(@main-color-1, 5%);
+        }
+    }
+
+    &.btn-round {
+        background-color: @main-color-1;
+        color: fade(@light-color, 100%);
+        .box-shadow(0, 13px, 42px, 0, fade(@shadow-color, 25%));
+    }
+
+    &.apple,
+    &.androad {
+        &:hover {
+            background-color: darken(@main-color-1, 5%);
+            border-color: darken(@main-color-1, 5%);
+        }
+    }
+}
+
+.btn-text-link {
+    color: fade(@light-color, 85%);
+
+    a {
+        color: @main-color-1;
+    }
+}
+
+
+/** 
+ * ======================
+ * Social Icon Style
+ * ======================
+ */
+.social-icon {
+    li {
+        a {
+            color: fade(@light-color, 40%);
+
+            &:hover {
+                color: fade(@light-color, 100%);
+            }
+        }
+    }
+}
+
+
+/**
+ * ===================================
+ * Subscription and contact  "MESSAGE"
+ * ===================================
+ */
+.email-loading {
+    color: #52B8FF;
+    
+}
+
+.subscription-failed, 
+.email-failed{
+    color: #FF5252 !important;
+}
+
+.subscription-success, 
+.email-success {
+    color: #56CC35;
+}
+
+
+
+/**
+ * =========================
+ * Form Style 
+ * =========================
+ */
+.single-form {
+    .form-control {
+        background-color: transparent;
+        border-color: transparent transparent fade(@light-color, 90%) transparent;
+        box-shadow: 0 0 0 0 #fff;
+        color: fade(@light-color, 90%);
+        .placeholder-color(fade(@light-color, 80%));
+
+        &:focus {
+            border-bottom-color: @main-color-1;
+        }
+    }
+
+    .select-outer {
+        &::after {
+            border-color: fade(@light-color, 100%) transparent transparent;
+        }
+    }
+}
+
+
+
+.light-text {
+    h1,
+    h2, 
+    h3, 
+    h4, 
+    h5, 
+    h6,
+    .btn * {
+        color: fade(@light-color, 100%);
+    }
+
+    p,
+    span,
+    .sub-title {
+        color: fade(@light-color, 90%);
+    }
+
+    .form-control {
+        color: fade(@light-color, 90%);
+        .placeholder-color(fade(@light-color, 80%));
+    }
+}
+
+
+
+/**
+ * ================================
+ * Background Hidden Text OR image
+ * ================================
+ */
+.hidden-shape {
+    color: fade(@shadow-color, 2.5%);
+}
+
+
+/**
+ * ================================
+ * Section Middle Separator
+ * ================================
+ */
+.middle-separator {
+    &::before {
+        border-left-color: fade(@light-color, 20%);
+    }
+
+    &::after {
+        background-color: @background-1;
+        border-color: @main-color-1;
+    }
+}
+
+
+
+
+/****************************************************************
+    START MAIN CSS STYLE
+*****************************************************************/
+/**
+ * =======================
+ * Navigation
+ * =======================
+ */
+.main-navbar-top {
+    background-color: @background-1;
+    .box-shadow(0, 1px, 12px, 0px, fade(@shadow-color, 10%));
+
+    .navbar-nav {
+        li {
+            .btn-nav {
+                color: fade(@light-color, 75%);
+
+                &:before {
+                    background-color: @main-color-1;
+                }
+
+                &:hover {
+                    color: fade(@main-color-1, 100%);
+                }
+            }
+
+            &.active {
+                .btn-nav {
+                    color: fade(@main-color-1, 100%);
+                }
+            }
+        }
+    }
+}
+
+
+
+/**
+ * ===============================
+ * Header Style 1
+ * ===============================
+*/
+.header {
+    .part-inner {
+        .title {
+            color: @light-color;
+        }
+
+        .sub-title {
+            color: fade(@light-color, 100%);
+        }
+
+        .detail {
+            color: fade(@light-color, 70%);
+        }
+
+    }
+
+    .bottom-part {
+        .apple,
+        .androad {
+            background-color: transparent;
+        }
+    }
+
+    &.light {
+        .part-inner {
+            .title,
+            .sub-title {
+                color: @light-color;
+            }
+
+            .detail {
+                color: fade(@light-color, 90%);
+            }
+        }
+    }
+
+}
+.body-slider-bg {
+    .swiper-button-next,
+    .swiper-button-prev {
+        background: fade(@shadow-color, 23%);
+        color: fade(@light-color, 80%);
+    }
+
+    .swiper-pagination-bullet {
+        &.swiper-pagination-bullet-active {
+            background-color: @main-color-1;
+        }
+    }
+}
+
+
+
+/**
+ * ===========================
+ * Features Section 1
+ * ===========================
+ */
+.icon-outer-border {
+    .fa {
+        border-color: @main-color-1;
+        color: @main-color-1;
+    }
+}
+
+
+
+/**
+ * ===========================
+ * Features Section 2
+ * ===========================
+ */
+.features-section-2 {
+    .contact-address {
+        a {
+            span {
+                border-bottom-color: fade(@light-color, 20%);
+            }
+
+            .number {
+                color: fade(@light-color, 45%);
+            }
+
+            .check-icon {
+                color: @main-color-1;
+            }
+
+            &:hover {
+                .number {
+                    color: fade(@light-color, 65%);
+                }
+            }
+        }
+    }
+}
+
+
+/**
+ * =======================
+ * Features Section 5
+ * =======================
+ */
+.features-section-5 {
+    .overlay-color-light {
+        background-color: fade(@background-1, 85%);
+    }
+
+    .testimonials-content {
+        .swiper-wrapper {
+            blockquote {
+                color: fade(@light-color, 70%);
+            }
+
+            .name {
+                color: @main-color-1;
+            }
+            .position {
+                color: @light-color;
+            }
+
+        }
+    }
+
+    .light {
+        .testimonials-content {
+            .swiper-wrapper {
+                .section-heading {
+                    color: @light-color;
+                }
+
+                blockquote {
+                    color: fade(@light-color, 90%);
+                }
+                .position {
+                    color: @light-color;
+                }
+            }
+        }
+    }
+
+    .testimonials-thumb {
+        .swiper-slide {
+            img {
+                background-color: @main-color-1;
+            }
+        }
+
+        img {
+            .box-shadow(0, 5px, 65px, 0, fade(@shadow-color, 12%));
+        }
+    }
+}
+
+
+
+/**
+ * =======================
+ * Features Section 6
+ * =======================
+ */
+.pricing-table {
+    .each-table {
+        .table-single {
+            background-color: @background-1;
+            .box-shadow(0, 8px, 45px, 0, fade(@shadow-color, 20%));
+
+            .nav {
+                li {
+                    border-bottom-color: fade(@shadow-color, 5%);
+                }
+            }
+        }
+    }
+
+    &.pricing-table-js {
+        .each-table {
+            .table-single {
+                &.left,
+                &.right {
+                    .btn {
+                        background-color: fade(@main-color-1, 50%);
+                    }
+                }
+
+                &.active {
+                    &.left,
+                    &.right {
+                        .btn {
+                            background-color: fade(@main-color-1, 100%);
+
+                            &:hover {
+                                background-color: darken(@main-color-1, 5%)
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+
+/**
+ * =======================
+ * Features Section 7
+ * =======================
+ */
+.features-section-7 {
+    .media-left {
+        .box-shadow( 0, 15px, 45px, 0, fade(@shadow-color, 12%) );
+    }
+
+    .media-body {
+        .inner {
+            .box-shadow(0, 7px, 33px, 0, fade(@shadow-color, 12%));
+            border-left-color: @main-color-1;
+            background-color: @background-1;
+
+            &::before {
+                border-color: @main-color-1 @main-color-1 transparent transparent;
+            }
+        }
+
+        .name {
+            color: @main-color-1;
+        }
+
+        .position {
+            color: @light-color;
+        }
+    }
+}
+
+
+
+/**
+ * =======================
+ * Features Section 8
+ * =======================
+ */
+.features-section-8 {
+    .swiper-container {
+        .swiper-slide {
+            border-color: fade(@main-color-1, 50%);
+        }
+
+        .swiper-pagination {
+            .swiper-pagination-bullet {
+                background-color: @light-color;
+
+                &.swiper-pagination-bullet-active {
+                    background-color: @main-color-1;
+                }
+            }
+        }
+    }
+}
+
+
+
+/**
+ * =======================
+ * Features Section 10
+ * =======================
+ */
+.features-section-10 {
+    .part-2 {
+        .media {
+            background-color: @background-2;
+
+            .fa {
+                color: @main-color-1;
+            }
+        }
+
+        .media-body {
+            .title {
+                color: @main-color-1;
+            }
+
+            .btn-more {
+                .btn-custom-set( @b-col: transparent, @col: fade(@light-color, 50%), @ho-b-color: transparent, @ho-col: fade(@main-color-1, 90%), @ho-bg-c: transparent);
+            }
+        }
+    }
+
+}
+
+
+/**
+ * ===============================
+ * Features Section 11
+ * ===============================
+ */
+.features-section-11 {
+    .video{
+        background-color: @background-2;
+    }
+}
+
+
+
+/**
+ * ===============================
+ * Features Section 12
+ * ===============================
+ */
+.features-section-12 {
+
+    .contact-address-inner {
+        background-color: @background-1;
+    }
+
+    .contact-address {
+        .each-address {
+            .media-body {
+                p {
+                    color: fade(@light-color, 60%);
+                }
+
+                a {
+                    color: fade(@light-color, 60%);
+
+                    &:hover {
+                        color: @main-color-1;
+                    }
+                }
+            }
+        }
+    }
+
+    .single-form {
+        .form-control {
+            border-color: transparent transparent fade(@light-color, 50%) transparent;
+
+            &:focus {
+                border-bottom-color: @main-color-1;
+            }
+        }
+    }
+
+    .map-info-window {
+        .title-text {
+            color: @main-color-1;
+        }
+
+        p {
+            color: @dark-color;
+        }
+    }
+}
+
+
+
+/**
+ * ==========================
+ * Features Section 13
+ * ==========================
+ */
+.features-section-13 {
+    .faq-group {
+        .each-faq {
+            background-color: @background-2;
+        }
+    }
+
+    &.bg-dark {
+        .faq-group {
+            .each-faq {
+                background-color: @background-1;
+            }
+        }
+    }
+
+    .faq-group {
+        .each-faq {
+            &.open {
+                .box-shadow(0, 7px, 33px, 0, fade(@shadow-color, 20%));
+                background-color: @background-1;
+            }
+        }
+
+        .faq-trigger {
+            color: fade(@light-color, 100%);
+        }
+    }
+}
+
+
+
+
+/**
+ * ==========================
+ * Features Section 14
+ * ==========================
+ */
+.features-section-14 {
+    .grid {
+        .grid-item {
+            figure {
+                figcaption {
+                    &:after {
+                        background-color: fade(@overlay-color, 65%);
+                    }
+
+                    .title {
+                        color: @light-color;
+                    }
+
+                    .sub-title {
+                        color: fade(@light-color, 85%);
+                    }
+
+                    .expand {
+                        color: @light-color;
+                    }
+
+                    .important {
+                        color: @main-color-1;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+
+
+/**
+ * ==========================
+ * Features Section 15
+ * ==========================
+ */
+.features-section-15 {
+    .project-gallery-view {
+        .project-information {
+            background-color: @background-2;
+
+            ul {
+                li {
+                    border-color: fade(@light-color, 12%);
+
+                    h4 {
+                        color: fade(@light-color, 100%);
+                    }
+
+                    a {
+                        color: fade(@light-color, 55%);
+
+                        &:hover {
+                            color: @main-color-1;
+                        }
+                    }
+
+                    &:last-child {
+                        border-color: fade(@light-color, 12%);
+                    }
+                }
+            }
+
+            &:hover {
+                .box-shadow(0, 10px, 65px, 0, fade(@shadow-color, 15%));
+            }
+        }
+
+        .title {
+            color: fade(@light-color, 90%);
+        }
+    }
+}
+
+
+
+
+/**
+ * ==========================
+ * Features Section 16
+ * ==========================
+ */
+.features-section-16 {
+    .each-item {
+        .inner {
+            border-color: fade(@shadow-color, 40%);
+            background-color: @background-1;
+            .box-shadow( 0, 15px, 45px, 0, fade(@shadow-color, 10%) );
+
+            &::after {
+                border-color: fade(@dark-color, 70%);
+            }
+
+            &:hover {
+                border-color: @main-color-1;
+
+                .fa,
+                .title,
+                .number {
+                    color: @main-color-1;
+                }
+            }
+        }
+
+        &:last-child {
+            .inner {
+                &::after {
+                    border-color: transparent;
+                }
+            }
+        }
+    }
+}
+
+
+
+/**
+ * ==========================
+ * Features Section 17
+ * ==========================
+ */
+.features-section-17 {
+    .each-item {
+        .media-body {
+            background-color: @background-2;
+
+            .title {
+                color: @main-color-1;
+            }
+        }
+
+        .social-icon {
+            li {
+                a {
+                    border-color: fade(@light-color, 20%);
+                    color: fade(@light-color, 70%);
+
+                    &:hover {
+                        color: @light-color;
+                        border-color: @main-color-1;
+                        background-color: @main-color-1;
+                    }
+                }
+            }
+        }
+    }
+
+    .hover {
+        .media {
+            &:hover {
+                .social-icon {
+                    li {
+                        a {
+                            border-color: @main-color-1;
+                            color: @main-color-1;
+
+                            &:hover {
+                                color: @light-color;
+                                border-color: @main-color-1;
+                                background-color: @main-color-1;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+
+
+/**
+ * ==========================
+ * Features Section 18
+ * ==========================
+ */
+.features-section-18 {
+    .single-form {
+        background-color: @background-1;
+        .box-shadow( 0, 8px, 45px, 0, fade(@shadow-color, 10%) );
+
+        .form-control {
+            border-bottom-color: fade(@light-color, 50%);
+
+            &:focus {
+                border-bottom-color: @main-color-1;
+            }
+        }
+
+        .select-outer {
+            &::after {
+                border-color: fade(@light-color, 50%) transparent transparent;
+            }
+        }
+
+        select {
+            option {
+                color: @dark-color;
+            }
+        }
+    }
+}
+
+
+
+/**
+ * ==========================
+ * Features Section 19
+ * ==========================
+ */
+.features-section-19 {
+    .btn-tab {
+        li {
+            a {
+                &,
+                &:hover {
+                    background-color: fade(@light-color, 20%);
+                    color: @light-color;
+                }
+            }
+
+            &.active {
+                a {
+                    background-color: fade(@main-color-1, 100%);
+                    color: @light-color;
+                }
+            }
+        }
+    }
+
+    .speakers-content {
+        .each-item {
+            .media-left,
+            .media-body .inner {
+                background-color: @background-1;
+                .box-shadow( 0, 15px, 45px, 0, fade(@shadow-color, 12%) );
+            }
+
+            .media-left {
+                &::before {
+                    border-color: fade(@main-color-1, 70%);
+                }
+            }
+
+            .media-body {
+                .inner {
+                    border-color: fade(@light-color, 10%);
+                }
+
+                .schedule-time {
+                    color: @main-color-1;
+                }
+
+                .title {
+                    color: fade(@light-color, 80%);
+                }
+
+                .panel-footer {
+                    background-color: @background-1;
+
+                    .nav {
+                        li {
+                            color: fade(@light-color, 95%);
+
+                            a {
+                                color: @main-color-1;
+
+                                &:hover {
+                                    color: darken(@main-color-1, 5%);
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+
+
+/**
+ * ====================================
+ * Footer Style 1
+ * ====================================
+ */
+.footer-section-1 {
+    background-color: @background-1;
+
+    .other-link {
+        .title {
+            color: @light-color
+        }
+
+        .nav {
+            a {
+                color: fade(@light-color, 70%);
+
+                &:hover {
+                    color: @light-color;
+                }
+            }
+        }
+    }
+}
+
+
+
+
+
+@media (max-width: @screen-xs-max) {
+    /**
+     * =======================
+     * Navigation
+     * =======================
+     */
+    .main-navbar-top {
+
+        .navbar-header {
+            .navbar-toggle {
+                .icon-bar {
+                    background-color: @main-color-1;
+                }
+            }
+        }
+
+        .navbar-collapse {
+            border-top-color: fade(@shadow-color, 10%);
+        }
+    }
+
+
+    /**
+     * =======================
+     * Features Section 6
+     * =======================
+     */
+    .pricing-table {
+        .each-table {
+            .table-single {
+                .box-shadow(0, 0px, 0px, 0, fade(@shadow-color, 00%));
+
+                .meta-price {
+                    color: @light-color !important;
+                }
+            }
+        }
+
+        &.pricing-table-js {
+            .each-table {
+                .btn {
+                    background-color: @main-color-1;
+                }
+
+                .table-single {
+                    &.active {
+                        .box-shadow(0, 8px, 45px, 0, fade(@shadow-color, 20%));
+                    }
+                }
+            }
+        }
+    }
+
+
+
+    /**
+     * ==========================
+     * Features Section 16
+     * ==========================
+     */
+    .features-section-16 {
+        .each-item {
+            .inner {
+                &::after {
+                    border-color: fade(@shadow-color, 15%);
+                }
+            }
+        }
+    }
+
+
+}
+

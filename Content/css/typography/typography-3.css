@@ -1,0 +1,83 @@
+@import url(https://fonts.googleapis.com/css?family=Montserrat:400,700);
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,100,300,500,700,900);
+/**
+ * ===============================
+ *  Defult CSS 
+ * ===============================
+ */
+html * {
+  font-family: 'Roboto', sans-serif;
+}
+body {
+  font-family: 'Roboto', sans-serif;
+}
+a {
+  font-family: 'Roboto', sans-serif;
+}
+p {
+  font-family: 'Roboto', sans-serif;
+}
+/* Heading Style */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Montserrat', sans-serif;
+}
+/**
+ * ====================================
+ *  Every Section Headline Defult Class
+ * ====================================
+ */
+.section-heading {
+  font-family: 'Montserrat', sans-serif;
+}
+.section-header .sub-title {
+  font-family: 'Roboto', sans-serif;
+}
+/**
+ * ===============================
+ *   Defult Button Style
+ * ===============================
+ */
+.btn {
+  font-family: 'Montserrat', sans-serif;
+}
+.btn .serif,
+.btn .serif * {
+  font-family: serif;
+}
+.btn .sans-serif,
+.btn .sans-serif * {
+  font-family: 'Montserrat', sans-serif;
+}
+/**
+ * ===================================
+ * Subscription and contact  "MESSAGE"
+ * ===================================
+ */
+.subscription-success,
+.subscription-failed,
+.email-success,
+.email-failed,
+.email-loading {
+  font-family: 'Roboto', sans-serif;
+}
+/**
+ * =========================
+ * Form Style 
+ * =========================
+ */
+.single-form .form-control {
+  font-family: 'Roboto', sans-serif;
+}
+/**
+ * =========================
+ * Pricing Table
+ * =========================
+ */
+.pricing-table .each-table .table-single .meta-price {
+  font-family: 'Montserrat', sans-serif;
+}

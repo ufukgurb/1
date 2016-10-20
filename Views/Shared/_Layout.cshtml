@@ -1,0 +1,43 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewBag.Title - My ASP.NET Application</title>
+    @Styles.Render("~/Content/css")
+    @Scripts.Render("~/bundles/modernizr")
+
+</head>
+<body>
+    <div style="text-align:center; background-color:black;">
+        <div class="container">
+            <div>
+                
+                <h1 style="color:white;"> Referans Vip Yönetim Paneli</h1>            
+            </div>
+            <div >
+          
+                 @*<h4> @Html.ActionLink("Referans işlemleri", "Index", "ResimReferans", new {@style="color:white" } ) <img src="~/images2/logo beyaz 256 x257.png" />  @Html.ActionLink("Filo işlemleri", "Index", "ResimFilomuz", new { @style = "color:white; margin-left:5px;" }) </h4>*@
+                <h4> <a href="@Url.Action("Index","ResimReferans")">Referans İşlemleri</a> <img src="~/images2/logo beyaz 256 x257.png" />  <a href="@Url.Action("Index","ResimFilomuz")">Filo İşlemleri</a> </h4>
+
+                    @*<li>@Html.ActionLink("Contact", "Contact", "Home")</li>*@
+        
+                @*@Html.Partial("_LoginPartial")*@
+            </div>
+        </div>
+    </div>
+    <div class="container body-content">
+        @RenderBody()
+        <hr />
+      
+            <footer style="background-color:black">
+                <p style="text-align:center"> </p>
+            </footer>
+        
+    </div>
+    <hr style="border:1px solid black"/>
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/bootstrap")
+    @RenderSection("scripts", required: false)
+</body>
+</html>

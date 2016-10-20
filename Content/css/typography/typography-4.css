@@ -1,0 +1,83 @@
+@import url(https://fonts.googleapis.com/css?family=Exo:400,100,200,300,500,600,700,800,900);
+@import url(https://fonts.googleapis.com/css?family=Poppins:400,300,500,600,700);
+/**
+ * ===============================
+ *  Defult CSS 
+ * ===============================
+ */
+html * {
+  font-family: 'Poppins', sans-serif;
+}
+body {
+  font-family: 'Poppins', sans-serif;
+}
+a {
+  font-family: 'Poppins', sans-serif;
+}
+p {
+  font-family: 'Poppins', sans-serif;
+}
+/* Heading Style */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Exo', sans-serif;
+}
+/**
+ * ====================================
+ *  Every Section Headline Defult Class
+ * ====================================
+ */
+.section-heading {
+  font-family: 'Exo', sans-serif;
+}
+.section-header .sub-title {
+  font-family: 'Poppins', sans-serif;
+}
+/**
+ * ===============================
+ *   Defult Button Style
+ * ===============================
+ */
+.btn {
+  font-family: 'Exo', sans-serif;
+}
+.btn .serif,
+.btn .serif * {
+  font-family: serif;
+}
+.btn .sans-serif,
+.btn .sans-serif * {
+  font-family: 'Exo', sans-serif;
+}
+/**
+ * ===================================
+ * Subscription and contact  "MESSAGE"
+ * ===================================
+ */
+.subscription-success,
+.subscription-failed,
+.email-success,
+.email-failed,
+.email-loading {
+  font-family: 'Poppins', sans-serif;
+}
+/**
+ * =========================
+ * Form Style 
+ * =========================
+ */
+.single-form .form-control {
+  font-family: 'Poppins', sans-serif;
+}
+/**
+ * =========================
+ * Pricing Table
+ * =========================
+ */
+.pricing-table .each-table .table-single .meta-price {
+  font-family: 'Exo', sans-serif;
+}

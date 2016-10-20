@@ -1,0 +1,136 @@
+// GOOGLE FONT LINK
+@import url(https://fonts.googleapis.com/css?family=Exo:400,100,200,300,500,600,700,800,900); // font-family: 'Exo', sans-serif;
+@import url(https://fonts.googleapis.com/css?family=Poppins:400,300,500,600,700); // font-family: 'Poppins', sans-serif;
+
+
+
+// This file import helping some function
+@import "../../bootstrap/less/variables.less";
+
+
+
+@font-2: 'Exo', sans-serif;
+@font-1: 'Poppins', sans-serif;
+
+
+/**
+ * ===============================
+ *  Defult CSS 
+ * ===============================
+ */
+html * {
+  font-family:          @font-1;
+}
+
+body{
+    font-family:        @font-1;
+}
+
+a{
+    font-family:        @font-1;
+}
+
+
+p{
+    font-family:        @font-1;
+}
+
+/* Heading Style */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family:        @font-2;
+}
+
+
+
+/**
+ * ====================================
+ *  Every Section Headline Defult Class
+ * ====================================
+ */
+.section-heading {
+    font-family:       @font-2;
+}
+.section-header {
+    .sub-title {
+        font-family:    @font-1;
+    }
+}
+
+
+
+
+/**
+ * ===============================
+ *   Defult Button Style
+ * ===============================
+ */
+.btn {
+    font-family:        @font-2;
+
+    .serif {
+        &,
+        * {
+            font-family: serif;
+        }
+    }
+
+    .sans-serif {
+        &,
+        * {
+            font-family: @font-2;
+        }
+    }
+}
+
+
+
+/**
+ * ===================================
+ * Subscription and contact  "MESSAGE"
+ * ===================================
+ */
+.message {
+}
+.subscription-success, 
+.subscription-failed, 
+.email-success, 
+.email-failed,
+.email-loading {
+    font-family:        @font-1;
+}
+
+
+
+/**
+ * =========================
+ * Form Style 
+ * =========================
+ */
+.single-form {
+    .form-control {
+        font-family:        @font-1;
+    }
+}
+
+
+
+
+/**
+ * =========================
+ * Pricing Table
+ * =========================
+ */
+.pricing-table {
+    .each-table {
+        .table-single {
+            .meta-price {
+                font-family:        @font-2;
+            }
+        }
+    }
+}

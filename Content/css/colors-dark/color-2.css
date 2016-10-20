@@ -1,0 +1,743 @@
+/**
+ * ===============================
+ *  Defult CSS 
+ * ===============================
+ */
+body {
+  color: rgba(255, 255, 255, 0.7);
+}
+a:hover {
+  color: #00ab66;
+}
+p {
+  color: rgba(255, 255, 255, 0.7);
+}
+/**
+ * ====================================
+ *  Every Section Headline Defult Class
+ * ====================================
+ */
+.section-heading {
+  color: #ffffff;
+}
+.section-header-separator,
+.section-header-separator::before,
+.section-header-separator::after {
+  background-color: #00ab66;
+}
+.section-header .sub-title {
+  color: rgba(255, 255, 255, 0.7);
+}
+.section-header .light {
+  color: #00ab66;
+}
+.light .section-heading {
+  color: #ffffff;
+}
+.light .section-header .sub-title,
+.light.section-header .sub-title {
+  color: rgba(255, 255, 255, 0.75);
+}
+.light .section-header .light,
+.light.section-header .light {
+  color: #00ab66;
+}
+section.section,
+section.section.bg-light {
+  background-color: #232323;
+}
+section.section.bg-dark {
+  background-color: #161616;
+}
+/**
+ * ===============================
+ *  Section Top and Bottom padding  
+ * ===============================
+ */
+.section-separator-line {
+  border-color: rgba(0, 0, 0, 0.03);
+}
+/**
+ * ====================================
+ * Background Overlay Color
+ * ====================================
+ */
+.overlay-color-dark {
+  background-color: rgba(0, 0, 0, 0.55);
+}
+.overlay-color-light {
+  background-color: rgba(35, 35, 35, 0.7);
+}
+.overlay-color-sky-blue {
+  background-color: rgba(0, 0, 0, 0.75);
+}
+.overlay-image {
+  background-color: rgba(0, 0, 0, 0.25);
+}
+.body-video-bg .overlay-image {
+  background-color: rgba(0, 0, 0, 0.45);
+}
+/**
+ * ===============================
+ *   Defult Button Style
+ * ===============================
+ */
+.btn {
+  color: #ffffff;
+}
+.btn:hover,
+.btn:focus {
+  color: #ffffff;
+}
+.btn.btn-fill {
+  background-color: #00ab66;
+}
+.btn.btn-fill:hover {
+  background-color: #009257;
+}
+.btn.btn-border {
+  border-color: #ffffff;
+}
+.btn.btn-border:hover {
+  background-color: #009257;
+  border-color: #009257;
+}
+.btn.btn-round {
+  background-color: #00ab66;
+  color: #ffffff;
+  box-shadow: 0 13px 42px 0 rgba(0, 0, 0, 0.25);
+  -moz-box-shadow: 0 13px 42px 0 rgba(0, 0, 0, 0.25);
+  -webkit-box-shadow: 0 13px 42px 0 rgba(0, 0, 0, 0.25);
+  -o-box-shadow: 0 13px 42px 0 rgba(0, 0, 0, 0.25);
+}
+.btn.apple:hover,
+.btn.androad:hover {
+  background-color: #009257;
+  border-color: #009257;
+}
+.btn-text-link {
+  color: rgba(255, 255, 255, 0.85);
+}
+.btn-text-link a {
+  color: #00ab66;
+}
+/** 
+ * ======================
+ * Social Icon Style
+ * ======================
+ */
+.social-icon li a {
+  color: rgba(255, 255, 255, 0.4);
+}
+.social-icon li a:hover {
+  color: #ffffff;
+}
+/**
+ * ===================================
+ * Subscription and contact  "MESSAGE"
+ * ===================================
+ */
+.email-loading {
+  color: #52B8FF;
+}
+.subscription-failed,
+.email-failed {
+  color: #FF5252 !important;
+}
+.subscription-success,
+.email-success {
+  color: #56CC35;
+}
+/**
+ * =========================
+ * Form Style 
+ * =========================
+ */
+.single-form .form-control {
+  background-color: transparent;
+  border-color: transparent transparent rgba(255, 255, 255, 0.9) transparent;
+  box-shadow: 0 0 0 0 #fff;
+  color: rgba(255, 255, 255, 0.9);
+}
+.single-form .form-control::-webkit-input-placeholder {
+  color: rgba(255, 255, 255, 0.8) !important;
+}
+.single-form .form-control:-moz-placeholder {
+  color: rgba(255, 255, 255, 0.8) !important;
+}
+.single-form .form-control::-moz-placeholder {
+  color: rgba(255, 255, 255, 0.8) !important;
+}
+.single-form .form-control:-ms-input-placeholder {
+  color: rgba(255, 255, 255, 0.8) !important;
+}
+.single-form .form-control:focus {
+  border-bottom-color: #00ab66;
+}
+.single-form .select-outer::after {
+  border-color: #ffffff transparent transparent;
+}
+.light-text h1,
+.light-text h2,
+.light-text h3,
+.light-text h4,
+.light-text h5,
+.light-text h6,
+.light-text .btn * {
+  color: #ffffff;
+}
+.light-text p,
+.light-text span,
+.light-text .sub-title {
+  color: rgba(255, 255, 255, 0.9);
+}
+.light-text .form-control {
+  color: rgba(255, 255, 255, 0.9);
+}
+.light-text .form-control::-webkit-input-placeholder {
+  color: rgba(255, 255, 255, 0.8) !important;
+}
+.light-text .form-control:-moz-placeholder {
+  color: rgba(255, 255, 255, 0.8) !important;
+}
+.light-text .form-control::-moz-placeholder {
+  color: rgba(255, 255, 255, 0.8) !important;
+}
+.light-text .form-control:-ms-input-placeholder {
+  color: rgba(255, 255, 255, 0.8) !important;
+}
+/**
+ * ================================
+ * Background Hidden Text OR image
+ * ================================
+ */
+.hidden-shape {
+  color: rgba(0, 0, 0, 0.025);
+}
+/**
+ * ================================
+ * Section Middle Separator
+ * ================================
+ */
+.middle-separator::before {
+  border-left-color: rgba(255, 255, 255, 0.2);
+}
+.middle-separator::after {
+  background-color: #232323;
+  border-color: #00ab66;
+}
+/****************************************************************
+    START MAIN CSS STYLE
+*****************************************************************/
+/**
+ * =======================
+ * Navigation
+ * =======================
+ */
+.main-navbar-top {
+  background-color: #232323;
+  box-shadow: 0 1px 12px 0px rgba(0, 0, 0, 0.1);
+  -moz-box-shadow: 0 1px 12px 0px rgba(0, 0, 0, 0.1);
+  -webkit-box-shadow: 0 1px 12px 0px rgba(0, 0, 0, 0.1);
+  -o-box-shadow: 0 1px 12px 0px rgba(0, 0, 0, 0.1);
+}
+.main-navbar-top .navbar-nav li .btn-nav {
+  color: rgba(255, 255, 255, 0.75);
+}
+.main-navbar-top .navbar-nav li .btn-nav:before {
+  background-color: #00ab66;
+}
+.main-navbar-top .navbar-nav li .btn-nav:hover {
+  color: #00ab66;
+}
+.main-navbar-top .navbar-nav li.active .btn-nav {
+  color: #00ab66;
+}
+/**
+ * ===============================
+ * Header Style 1
+ * ===============================
+*/
+.header .part-inner .title {
+  color: #ffffff;
+}
+.header .part-inner .sub-title {
+  color: #ffffff;
+}
+.header .part-inner .detail {
+  color: rgba(255, 255, 255, 0.7);
+}
+.header .bottom-part .apple,
+.header .bottom-part .androad {
+  background-color: transparent;
+}
+.header.light .part-inner .title,
+.header.light .part-inner .sub-title {
+  color: #ffffff;
+}
+.header.light .part-inner .detail {
+  color: rgba(255, 255, 255, 0.9);
+}
+.body-slider-bg .swiper-button-next,
+.body-slider-bg .swiper-button-prev {
+  background: rgba(0, 0, 0, 0.23);
+  color: rgba(255, 255, 255, 0.8);
+}
+.body-slider-bg .swiper-pagination-bullet.swiper-pagination-bullet-active {
+  background-color: #00ab66;
+}
+/**
+ * ===========================
+ * Features Section 1
+ * ===========================
+ */
+.icon-outer-border .fa {
+  border-color: #00ab66;
+  color: #00ab66;
+}
+/**
+ * ===========================
+ * Features Section 2
+ * ===========================
+ */
+.features-section-2 .contact-address a span {
+  border-bottom-color: rgba(255, 255, 255, 0.2);
+}
+.features-section-2 .contact-address a .number {
+  color: rgba(255, 255, 255, 0.45);
+}
+.features-section-2 .contact-address a .check-icon {
+  color: #00ab66;
+}
+.features-section-2 .contact-address a:hover .number {
+  color: rgba(255, 255, 255, 0.65);
+}
+/**
+ * =======================
+ * Features Section 5
+ * =======================
+ */
+.features-section-5 .overlay-color-light {
+  background-color: rgba(35, 35, 35, 0.85);
+}
+.features-section-5 .testimonials-content .swiper-wrapper blockquote {
+  color: rgba(255, 255, 255, 0.7);
+}
+.features-section-5 .testimonials-content .swiper-wrapper .name {
+  color: #00ab66;
+}
+.features-section-5 .testimonials-content .swiper-wrapper .position {
+  color: #ffffff;
+}
+.features-section-5 .light .testimonials-content .swiper-wrapper .section-heading {
+  color: #ffffff;
+}
+.features-section-5 .light .testimonials-content .swiper-wrapper blockquote {
+  color: rgba(255, 255, 255, 0.9);
+}
+.features-section-5 .light .testimonials-content .swiper-wrapper .position {
+  color: #ffffff;
+}
+.features-section-5 .testimonials-thumb .swiper-slide img {
+  background-color: #00ab66;
+}
+.features-section-5 .testimonials-thumb img {
+  box-shadow: 0 5px 65px 0 rgba(0, 0, 0, 0.12);
+  -moz-box-shadow: 0 5px 65px 0 rgba(0, 0, 0, 0.12);
+  -webkit-box-shadow: 0 5px 65px 0 rgba(0, 0, 0, 0.12);
+  -o-box-shadow: 0 5px 65px 0 rgba(0, 0, 0, 0.12);
+}
+/**
+ * =======================
+ * Features Section 6
+ * =======================
+ */
+.pricing-table .each-table .table-single {
+  background-color: #232323;
+  box-shadow: 0 8px 45px 0 rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: 0 8px 45px 0 rgba(0, 0, 0, 0.2);
+  -webkit-box-shadow: 0 8px 45px 0 rgba(0, 0, 0, 0.2);
+  -o-box-shadow: 0 8px 45px 0 rgba(0, 0, 0, 0.2);
+}
+.pricing-table .each-table .table-single .nav li {
+  border-bottom-color: rgba(0, 0, 0, 0.05);
+}
+.pricing-table.pricing-table-js .each-table .table-single.left .btn,
+.pricing-table.pricing-table-js .each-table .table-single.right .btn {
+  background-color: rgba(0, 171, 102, 0.5);
+}
+.pricing-table.pricing-table-js .each-table .table-single.active.left .btn,
+.pricing-table.pricing-table-js .each-table .table-single.active.right .btn {
+  background-color: #00ab66;
+}
+.pricing-table.pricing-table-js .each-table .table-single.active.left .btn:hover,
+.pricing-table.pricing-table-js .each-table .table-single.active.right .btn:hover {
+  background-color: #009257;
+}
+/**
+ * =======================
+ * Features Section 7
+ * =======================
+ */
+.features-section-7 .media-left {
+  box-shadow: 0 15px 45px 0 rgba(0, 0, 0, 0.12);
+  -moz-box-shadow: 0 15px 45px 0 rgba(0, 0, 0, 0.12);
+  -webkit-box-shadow: 0 15px 45px 0 rgba(0, 0, 0, 0.12);
+  -o-box-shadow: 0 15px 45px 0 rgba(0, 0, 0, 0.12);
+}
+.features-section-7 .media-body .inner {
+  box-shadow: 0 7px 33px 0 rgba(0, 0, 0, 0.12);
+  -moz-box-shadow: 0 7px 33px 0 rgba(0, 0, 0, 0.12);
+  -webkit-box-shadow: 0 7px 33px 0 rgba(0, 0, 0, 0.12);
+  -o-box-shadow: 0 7px 33px 0 rgba(0, 0, 0, 0.12);
+  border-left-color: #00ab66;
+  background-color: #232323;
+}
+.features-section-7 .media-body .inner::before {
+  border-color: #00ab66 #00ab66 transparent transparent;
+}
+.features-section-7 .media-body .name {
+  color: #00ab66;
+}
+.features-section-7 .media-body .position {
+  color: #ffffff;
+}
+/**
+ * =======================
+ * Features Section 8
+ * =======================
+ */
+.features-section-8 .swiper-container .swiper-slide {
+  border-color: rgba(0, 171, 102, 0.5);
+}
+.features-section-8 .swiper-container .swiper-pagination .swiper-pagination-bullet {
+  background-color: #ffffff;
+}
+.features-section-8 .swiper-container .swiper-pagination .swiper-pagination-bullet.swiper-pagination-bullet-active {
+  background-color: #00ab66;
+}
+/**
+ * =======================
+ * Features Section 10
+ * =======================
+ */
+.features-section-10 .part-2 .media {
+  background-color: #161616;
+}
+.features-section-10 .part-2 .media .fa {
+  color: #00ab66;
+}
+.features-section-10 .part-2 .media-body .title {
+  color: #00ab66;
+}
+.features-section-10 .part-2 .media-body .btn-more {
+  padding: 0 0;
+  border-color: transparent;
+  min-width: auto;
+  color: rgba(255, 255, 255, 0.5);
+  background-color: transparent;
+}
+.features-section-10 .part-2 .media-body .btn-more:hover {
+  border-color: transparent;
+  color: rgba(0, 171, 102, 0.9);
+  background-color: transparent;
+}
+/**
+ * ===============================
+ * Features Section 11
+ * ===============================
+ */
+.features-section-11 .video {
+  background-color: #161616;
+}
+/**
+ * ===============================
+ * Features Section 12
+ * ===============================
+ */
+.features-section-12 .contact-address-inner {
+  background-color: #232323;
+}
+.features-section-12 .contact-address .each-address .media-body p {
+  color: rgba(255, 255, 255, 0.6);
+}
+.features-section-12 .contact-address .each-address .media-body a {
+  color: rgba(255, 255, 255, 0.6);
+}
+.features-section-12 .contact-address .each-address .media-body a:hover {
+  color: #00ab66;
+}
+.features-section-12 .single-form .form-control {
+  border-color: transparent transparent rgba(255, 255, 255, 0.5) transparent;
+}
+.features-section-12 .single-form .form-control:focus {
+  border-bottom-color: #00ab66;
+}
+.features-section-12 .map-info-window .title-text {
+  color: #00ab66;
+}
+.features-section-12 .map-info-window p {
+  color: #373737;
+}
+/**
+ * ==========================
+ * Features Section 13
+ * ==========================
+ */
+.features-section-13 .faq-group .each-faq {
+  background-color: #161616;
+}
+.features-section-13.bg-dark .faq-group .each-faq {
+  background-color: #232323;
+}
+.features-section-13 .faq-group .each-faq.open {
+  box-shadow: 0 7px 33px 0 rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: 0 7px 33px 0 rgba(0, 0, 0, 0.2);
+  -webkit-box-shadow: 0 7px 33px 0 rgba(0, 0, 0, 0.2);
+  -o-box-shadow: 0 7px 33px 0 rgba(0, 0, 0, 0.2);
+  background-color: #232323;
+}
+.features-section-13 .faq-group .faq-trigger {
+  color: #ffffff;
+}
+/**
+ * ==========================
+ * Features Section 14
+ * ==========================
+ */
+.features-section-14 .grid .grid-item figure figcaption:after {
+  background-color: rgba(0, 0, 0, 0.65);
+}
+.features-section-14 .grid .grid-item figure figcaption .title {
+  color: #ffffff;
+}
+.features-section-14 .grid .grid-item figure figcaption .sub-title {
+  color: rgba(255, 255, 255, 0.85);
+}
+.features-section-14 .grid .grid-item figure figcaption .expand {
+  color: #ffffff;
+}
+.features-section-14 .grid .grid-item figure figcaption .important {
+  color: #00ab66;
+}
+/**
+ * ==========================
+ * Features Section 15
+ * ==========================
+ */
+.features-section-15 .project-gallery-view .project-information {
+  background-color: #161616;
+}
+.features-section-15 .project-gallery-view .project-information ul li {
+  border-color: rgba(255, 255, 255, 0.12);
+}
+.features-section-15 .project-gallery-view .project-information ul li h4 {
+  color: #ffffff;
+}
+.features-section-15 .project-gallery-view .project-information ul li a {
+  color: rgba(255, 255, 255, 0.55);
+}
+.features-section-15 .project-gallery-view .project-information ul li a:hover {
+  color: #00ab66;
+}
+.features-section-15 .project-gallery-view .project-information ul li:last-child {
+  border-color: rgba(255, 255, 255, 0.12);
+}
+.features-section-15 .project-gallery-view .project-information:hover {
+  box-shadow: 0 10px 65px 0 rgba(0, 0, 0, 0.15);
+  -moz-box-shadow: 0 10px 65px 0 rgba(0, 0, 0, 0.15);
+  -webkit-box-shadow: 0 10px 65px 0 rgba(0, 0, 0, 0.15);
+  -o-box-shadow: 0 10px 65px 0 rgba(0, 0, 0, 0.15);
+}
+.features-section-15 .project-gallery-view .title {
+  color: rgba(255, 255, 255, 0.9);
+}
+/**
+ * ==========================
+ * Features Section 16
+ * ==========================
+ */
+.features-section-16 .each-item .inner {
+  border-color: rgba(0, 0, 0, 0.4);
+  background-color: #232323;
+  box-shadow: 0 15px 45px 0 rgba(0, 0, 0, 0.1);
+  -moz-box-shadow: 0 15px 45px 0 rgba(0, 0, 0, 0.1);
+  -webkit-box-shadow: 0 15px 45px 0 rgba(0, 0, 0, 0.1);
+  -o-box-shadow: 0 15px 45px 0 rgba(0, 0, 0, 0.1);
+}
+.features-section-16 .each-item .inner::after {
+  border-color: rgba(55, 55, 55, 0.7);
+}
+.features-section-16 .each-item .inner:hover {
+  border-color: #00ab66;
+}
+.features-section-16 .each-item .inner:hover .fa,
+.features-section-16 .each-item .inner:hover .title,
+.features-section-16 .each-item .inner:hover .number {
+  color: #00ab66;
+}
+.features-section-16 .each-item:last-child .inner::after {
+  border-color: transparent;
+}
+/**
+ * ==========================
+ * Features Section 17
+ * ==========================
+ */
+.features-section-17 .each-item .media-body {
+  background-color: #161616;
+}
+.features-section-17 .each-item .media-body .title {
+  color: #00ab66;
+}
+.features-section-17 .each-item .social-icon li a {
+  border-color: rgba(255, 255, 255, 0.2);
+  color: rgba(255, 255, 255, 0.7);
+}
+.features-section-17 .each-item .social-icon li a:hover {
+  color: #ffffff;
+  border-color: #00ab66;
+  background-color: #00ab66;
+}
+.features-section-17 .hover .media:hover .social-icon li a {
+  border-color: #00ab66;
+  color: #00ab66;
+}
+.features-section-17 .hover .media:hover .social-icon li a:hover {
+  color: #ffffff;
+  border-color: #00ab66;
+  background-color: #00ab66;
+}
+/**
+ * ==========================
+ * Features Section 18
+ * ==========================
+ */
+.features-section-18 .single-form {
+  background-color: #232323;
+  box-shadow: 0 8px 45px 0 rgba(0, 0, 0, 0.1);
+  -moz-box-shadow: 0 8px 45px 0 rgba(0, 0, 0, 0.1);
+  -webkit-box-shadow: 0 8px 45px 0 rgba(0, 0, 0, 0.1);
+  -o-box-shadow: 0 8px 45px 0 rgba(0, 0, 0, 0.1);
+}
+.features-section-18 .single-form .form-control {
+  border-bottom-color: rgba(255, 255, 255, 0.5);
+}
+.features-section-18 .single-form .form-control:focus {
+  border-bottom-color: #00ab66;
+}
+.features-section-18 .single-form .select-outer::after {
+  border-color: rgba(255, 255, 255, 0.5) transparent transparent;
+}
+.features-section-18 .single-form select option {
+  color: #373737;
+}
+/**
+ * ==========================
+ * Features Section 19
+ * ==========================
+ */
+.features-section-19 .btn-tab li a,
+.features-section-19 .btn-tab li a:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+  color: #ffffff;
+}
+.features-section-19 .btn-tab li.active a {
+  background-color: #00ab66;
+  color: #ffffff;
+}
+.features-section-19 .speakers-content .each-item .media-left,
+.features-section-19 .speakers-content .each-item .media-body .inner {
+  background-color: #232323;
+  box-shadow: 0 15px 45px 0 rgba(0, 0, 0, 0.12);
+  -moz-box-shadow: 0 15px 45px 0 rgba(0, 0, 0, 0.12);
+  -webkit-box-shadow: 0 15px 45px 0 rgba(0, 0, 0, 0.12);
+  -o-box-shadow: 0 15px 45px 0 rgba(0, 0, 0, 0.12);
+}
+.features-section-19 .speakers-content .each-item .media-left::before {
+  border-color: rgba(0, 171, 102, 0.7);
+}
+.features-section-19 .speakers-content .each-item .media-body .inner {
+  border-color: rgba(255, 255, 255, 0.1);
+}
+.features-section-19 .speakers-content .each-item .media-body .schedule-time {
+  color: #00ab66;
+}
+.features-section-19 .speakers-content .each-item .media-body .title {
+  color: rgba(255, 255, 255, 0.8);
+}
+.features-section-19 .speakers-content .each-item .media-body .panel-footer {
+  background-color: #232323;
+}
+.features-section-19 .speakers-content .each-item .media-body .panel-footer .nav li {
+  color: rgba(255, 255, 255, 0.95);
+}
+.features-section-19 .speakers-content .each-item .media-body .panel-footer .nav li a {
+  color: #00ab66;
+}
+.features-section-19 .speakers-content .each-item .media-body .panel-footer .nav li a:hover {
+  color: #009257;
+}
+/**
+ * ====================================
+ * Footer Style 1
+ * ====================================
+ */
+.footer-section-1 {
+  background-color: #232323;
+}
+.footer-section-1 .other-link .title {
+  color: #ffffff;
+}
+.footer-section-1 .other-link .nav a {
+  color: rgba(255, 255, 255, 0.7);
+}
+.footer-section-1 .other-link .nav a:hover {
+  color: #ffffff;
+}
+@media (max-width: 767px) {
+  /**
+     * =======================
+     * Navigation
+     * =======================
+     */
+  .main-navbar-top .navbar-header .navbar-toggle .icon-bar {
+    background-color: #00ab66;
+  }
+  .main-navbar-top .navbar-collapse {
+    border-top-color: rgba(0, 0, 0, 0.1);
+  }
+  /**
+     * =======================
+     * Features Section 6
+     * =======================
+     */
+  .pricing-table .each-table .table-single {
+    box-shadow: 0 0px 0px 0 rgba(0, 0, 0, 0);
+    -moz-box-shadow: 0 0px 0px 0 rgba(0, 0, 0, 0);
+    -webkit-box-shadow: 0 0px 0px 0 rgba(0, 0, 0, 0);
+    -o-box-shadow: 0 0px 0px 0 rgba(0, 0, 0, 0);
+  }
+  .pricing-table .each-table .table-single .meta-price {
+    color: #ffffff !important;
+  }
+  .pricing-table.pricing-table-js .each-table .btn {
+    background-color: #00ab66;
+  }
+  .pricing-table.pricing-table-js .each-table .table-single.active {
+    box-shadow: 0 8px 45px 0 rgba(0, 0, 0, 0.2);
+    -moz-box-shadow: 0 8px 45px 0 rgba(0, 0, 0, 0.2);
+    -webkit-box-shadow: 0 8px 45px 0 rgba(0, 0, 0, 0.2);
+    -o-box-shadow: 0 8px 45px 0 rgba(0, 0, 0, 0.2);
+  }
+  /**
+     * ==========================
+     * Features Section 16
+     * ==========================
+     */
+  .features-section-16 .each-item .inner::after {
+    border-color: rgba(0, 0, 0, 0.15);
+  }
+}
+
+/*# sourceMappingURL=color-2.css.map */

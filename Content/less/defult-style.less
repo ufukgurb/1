@@ -1,0 +1,1041 @@
+// This file import helping some function
+@import "../bootstrap/less/variables.less";
+
+/**
+ * ===============================
+ *  Defult CSS 
+ * ===============================
+ */
+html * {
+  text-rendering:           optimizeLegibility;
+  -webkit-font-smoothing:   antialiased;
+  -moz-osx-font-smoothing:  grayscale;
+  font-family:              'Exo', sans-serif;
+}
+
+body{
+    font-family:            'Exo', sans-serif;
+    overflow-x:             hidden !important;
+    font-size:              15px;
+    font-style:             none;
+    line-height:            23px;
+    font-weight:            400;
+    // color:                  fade(@dark-color, 60%);
+    text-align:             left;
+    // letter-spacing:         1px;
+}
+
+a{
+    text-decoration:    none !important;
+    cursor:             pointer !important;
+    font-family:        'Exo', sans-serif;
+    .transition(0.4s);
+
+    &:hover {
+        // color: @main-color-1;
+    }
+
+    &:focus {
+        outline: 0;
+    }
+}
+
+.fix{
+    overflow:           hidden;
+}
+
+.margin-b25 {
+    margin-bottom:      25px;
+    display:            inline-block;
+}
+
+
+/* Video Background */
+.background-video {
+    position:           fixed;
+    z-index:            -10;
+    top:                0;
+    left:               50%;
+    bottom:             0;
+    min-width:          100%;
+    min-height:         100%;
+    -webkit-transform:  translate(-50%, 0);
+    -moz-transform:     translate(-50%, 0);
+    -ms-transform:      translate(-50%, 0);
+    -o-transform:       translate(-50%, 0);
+    transform:          translate(-50%, 0);
+    background:         url(../video/video.jpg) no-repeat;
+    background-size:    cover;
+}
+
+
+.section-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    min-height: 100%;
+    min-width: 100%;
+    overflow: hidden;
+    z-index: -1;
+
+    .bgvid {
+        position: absolute;
+        top: 0;
+        left: 0;
+        min-height: 100%;
+        min-width: 100%;
+        background-size: cover;
+    }
+}
+
+
+p{
+    font-family:        'Exo', sans-serif;
+    // color:              fade(@dark-color, 60%);
+    font-size:          15px;
+    margin-bottom:      25px;
+    font-weight:        400;
+}
+
+/* Heading Style */
+h1{
+    font-size:          42px;
+    line-height:        52px;
+    font-weight:        300;
+    margin:             0;
+}
+h2{
+    font-size:          35px;
+    line-height:        46px;
+    font-weight:        300;
+}
+h3{
+    font-size:          25px;
+    line-height:        36px;
+    font-weight:        300;
+}
+h4,
+h5,
+h6{
+    font-weight:        300;
+}
+
+
+
+/**
+ * ====================================
+ *  Every Section Headline Defult Class
+ * ====================================
+ */
+.section-heading {
+    font-weight: 300;
+    // color: fade(@dark-color, 80%);
+    padding-bottom: 0px;
+    display: inline-block;
+    margin: 0;
+}
+
+.section-header-separator {
+    position: relative;
+    width: 30px;
+    margin: 20px auto;
+
+    &,
+    &::before,
+    &::after {
+        height: 2px;
+        // background-color: @main-color-1;
+        .border-radius();
+    }
+
+    &::before {
+        content: '';
+        position: absolute;
+        width: 80px;
+    }
+
+    &::before {
+        left: -25px;
+        top: -5px;
+    }
+
+    &::after {
+        right: -40px;
+        bottom: -5px;
+    }
+}
+
+.section-header {
+    margin-bottom: 40px;
+    text-align: center;
+
+    .sub-title {
+        font-size: 15px;
+        line-height: 26px;
+        font-weight: 400;
+        // color: fade(@dark-color, 65%);
+        margin: 0;
+        text-transform: uppercase;
+    }
+
+    &.text-left,
+    .text-left {
+        &,
+        * {
+            text-align: left;
+            margin-left: 0;
+
+            &::after,
+            &::before {
+                left: 0;
+            }
+        }
+    }
+
+    &.text-right,
+    .text-right {
+        &,
+        * {
+            text-align: right;
+            margin-right: 0;
+            
+            &::after,
+            &::before {
+                right: 0;
+            }
+        }
+    }
+
+    .light {
+        // color: @main-color-1;
+    }
+}
+
+.light {
+    .section-heading {
+        // color: fade(@light-color, 100%);
+    }
+
+    .section-header,
+    &.section-header {
+        .sub-title {
+            // color: fade(@light-color, 75%);
+        }
+
+        .light {
+            // color: @main-color-1;
+        }
+    }
+
+}
+
+
+
+
+section {
+    &.section {
+        position: relative;
+        
+        &,
+        &.bg-light {
+            // background-color: @background-1;
+        }
+
+        &.bg-dark {
+            // background-color: @background-2;
+        }
+
+    }
+}
+
+
+
+/**
+ * ===============================
+ *  Section Top and Bottom padding  
+ * ===============================
+ */
+.section-separator {
+    display: block;
+    padding-top: 125px;
+    padding-bottom: 125px;
+
+    &.sp-top {
+        padding-bottom: 0px;
+    }
+    &.sp-bottom {
+        padding-top: 0px;
+    }
+}
+.section-separator-line {
+    width: 100%;
+    border-bottom: 1px solid;
+    // border-color: fade(@shadow-color, 3%);
+}
+
+
+
+/**
+ * ====================================
+ * Background Overlay Color
+ * ====================================
+ */
+.overlay-color-dark {
+    position: relative;
+    // background-color: fade(@overlay-color, 50%);
+}
+.overlay-color-light {
+    position: relative;
+    // background-color: fade(@background-1, 70%);
+}
+.overlay-color-sky-blue {
+    position: relative;
+    // background-color: fade(darken(@main-color-1, 42%), 75%);
+}
+.overlay-image {
+    position: relative;
+    background: url(../images/grid.png);
+    // background-color: fade(@shadow-color, 25%);
+}
+
+.body-video-bg {
+    .overlay-image {
+        // background-color: fade(@shadow-color, 45%);
+    }
+}
+
+
+.light-text {
+    h1,
+    h2, 
+    h3, 
+    h4, 
+    h5, 
+    h6,
+    .btn * {
+        // color: fade(@light-color, 100%);
+    }
+
+    p,
+    span,
+    .sub-heading {
+        // color: fade(@light-color, 70%);
+    }
+}
+
+
+
+/**
+ * ====================================
+ * Making Same Height Left & Right Part
+ * ====================================
+ */
+.display-full {
+    display: table !important;
+    width: 100%;
+
+    .left,
+    .right {
+        display: table-cell;
+        float: none !important;
+    }
+}
+
+
+
+/**
+ * ===============================
+ *   Defult Button Style
+ * ===============================
+ */
+.btn {
+    .border-radius( @lu: @border-radius, @ru: @border-radius, @rd: @border-radius, @ld: @border-radius );
+    border: none;
+    // color: @light-color;
+    cursor: pointer;
+    display: inline-block;
+    font-family: inherit;
+    font-size: 17px;
+    font-weight: 400;
+    margin-right: 15px;
+    overflow: hidden;
+    outline: 0;
+    padding: 0 0;
+    position: relative;
+    z-index: 2;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    .transition(0.4s);
+
+    &:last-child {
+        margin-right: 0px !important;
+    }
+
+    &:hover,
+    &:focus {
+        // color: @light-color;
+    }
+
+    .fa {
+        position: relative;
+        top: 2px;
+
+        img {
+            position: relative;
+            top: -3px;
+            width: 14px;
+        }
+    }
+
+    &.left-icon {
+        .fa {
+            margin-right: 15px;
+        }
+    }
+
+    &.right-icon {
+        .fa {
+            margin-left: 15px;
+        }
+    }
+
+    &.btn-fill {
+        // background-color: @main-color-1;
+        padding: 20px 25px;
+
+        &:hover {
+            // background-color: darken(@main-color-1, 15%);
+        }
+    }
+
+    &.btn-border {
+        background-color: transparent;
+        border: 1px solid;
+        // border-color: fade(@light-color, 100%);
+        padding: 20px 25px;
+
+        &:hover {
+            // background-color: darken(@main-color-1, 15%);
+            // border-color: darken(@main-color-1, 15%);
+        }
+    }
+
+    &.btn-round {
+        padding: 15px;
+        // background-color: @main-color-1;
+        border-radius: 50%;
+        width: 65px;
+        height: 65px;
+        // color: fade(@light-color, 100%);
+        font-size: 24px;
+        text-align: center;
+        // .box-shadow(0, 13px, 42px, 0, fade(@shadow-color, 25%));
+
+        .fa {
+            top: 7px;
+        }
+    }
+
+    &.apple,
+    &.androad {
+        .border-radius( @lu: 5px, @ru: 5px, @rd: 5px, @ld: 5px );
+        padding: 9px;
+        height: 60px;
+
+        img {
+            // width: 35px;
+            height: 100%;
+            float: left;
+        }
+
+        span {
+            display: block;
+            //.transition( 0.4s );
+        }
+
+        .group {
+            float: right;
+        }
+
+        .big,
+        .small {
+            text-align: left;
+            margin-left: 7px;
+            line-height: 19px;
+        }
+
+        .big {
+            font-size: 20px;
+        }
+
+        .small {
+            font-size: 13px;
+        }
+
+        &:hover {
+            // background-color: @shadow-color;
+            // border-color: @shadow-color;
+        }
+    }
+
+    &.androad {
+        .group {
+            padding-top: 13px;
+        }
+    }
+
+    &.btn-dark {
+        // color: fade(@dark-color, 80%);
+        
+        &:hover,
+        &:focus {
+            // color: @dark-color;
+        }
+
+        &.btn-fill {
+            // background-color: @dark-color;
+
+            span {
+                // color: @light-color;
+            }
+        }
+
+        &.btn-border {
+            // border-color: fade(@dark-color, 50%);
+        }
+
+        &.btn-round {
+            // background-color: @main-color-1;
+            // color: fade(@dark-color, 100%);
+        }
+
+        &:hover {
+            // color: @light-color;
+        }
+    }
+
+    .serif {
+        &,
+        * {
+            font-family: 'Tinos', serif;
+        }
+    }
+
+    .sans-serif {
+        &,
+        * {
+            font-family:  'Exo', sans-serif;
+        }
+    }
+}
+
+.btn-form {
+    &.center {
+        text-align: center;
+
+        .btn {
+            display: inline-block;
+        }
+    }
+}
+
+.mr-top {
+    margin-top: 40px;
+}
+.mr-bottom {
+    margin-bottom: 40px;
+}
+
+
+
+.btn.active.focus, 
+.btn.active:focus, 
+.btn.focus, 
+.btn:active.focus, 
+.btn:active:focus, 
+.btn:focus {
+    outline: thin dotted;
+    outline: 0px auto -webkit-focus-ring-color !important;
+    outline-offset: -2px;
+}
+
+.btn-text-link {
+    padding: 50px 0 0 0;
+    text-align: center;
+    // color: fade(@dark-color, 85%);
+
+    a {
+        // color: @main-color-1;
+        margin-left: 10px;
+    }
+}
+
+
+
+/**
+ * ================================
+ * Nav Defult Style
+ * ================================
+ */
+.nav {
+    li {
+        a {
+            padding: 2px;
+            
+            &:hover,
+            &:focus {
+                background-color: transparent;
+            }
+        }
+    }
+}
+
+
+
+/** 
+ * ======================
+ * Social Icon Style
+ * ======================
+ */
+.social-icon {
+    margin-top: 20px;
+
+    li {
+        list-style: none;
+        float: left;
+        margin-bottom: 0px;
+
+        a {
+            font-size: 17px;
+            text-align: center;
+            margin-right: 15px;
+            // color: fade(@dark-color, 40%);
+
+            &:hover {
+                // color: fade(@dark-color, 100%);
+            }
+        }
+
+        &:last-child {
+            a {
+                margin-right: 0px;
+            }
+        }
+    }
+}
+
+
+
+/**
+ * ======================================
+ * Project Full View Helping Custom Style
+ *  - PreLoader Style
+ *  - Back Button Style
+ * ======================================
+ */
+.project-loader-backButton {
+    .project-filter-loader {
+        min-height: 350px;
+        width: 100%;
+        position: relative;
+        display: none;
+
+        .object {
+            //background-color: @main-color-1;
+        }
+    }
+
+    .back-button {
+        text-align: center;
+        margin-top: 35px;
+
+        .btn {
+            display: none;
+        }
+    }
+}
+
+
+
+
+/**
+ * ===================================
+ * Subscription and contact  "MESSAGE"
+ * ===================================
+ */
+.message {
+}
+.subscription-success, 
+.subscription-failed, 
+.email-success, 
+.email-failed,
+.email-loading {
+    font-size: 14px;
+    display: none;
+    text-align: center !important;
+    margin: 0 0 25px 0 !important;
+}
+
+.email-loading {
+    color: #52B8FF;
+    
+    img {
+        width: 15px;
+        position: relative;
+        top: -2px;
+    }
+    
+}
+
+.subscription-failed, 
+.email-failed{
+    color: #FF5252 !important;
+
+    .fa {
+        font-size: 20px;
+        position: relative;
+        top: 5px;
+    }
+}
+
+.subscription-success, 
+.email-success {
+    color: #56CC35;
+}
+
+.subscription-failed, 
+.email-failed,
+.subscription-success, 
+.email-success {
+    .fa {
+        font-size: 20px;
+        position: relative;
+        top: 5px;    
+    }
+}
+
+
+
+
+/**
+ * =========================
+ * Form Style 
+ * =========================
+ */
+.single-form {
+    width: 100%;
+    display: inline-table;
+
+    .form-control {
+        background-color: transparent;
+        border: 1px solid;
+        // border-color: transparent transparent fade(@light-color, 70%) transparent;
+        border-radius: 0;
+        box-shadow: 0 0 0 0 #fff;
+        // color: fade(@dark-color, 90%);
+        font-size: 15px;
+        font-weight: 400;
+        height: 45px;
+        text-align: center;;
+        letter-spacing: 1px;
+        margin-bottom: 20px;
+        padding: 0 15px;
+        // .placeholder-color(fade(@dark-color, 80%));
+        .transition( 0.4s );
+
+        &:focus {
+            // border-bottom-color: @main-color-1;
+        }
+    }
+
+    textarea {
+        height: 238px;
+        padding: 10px 15px !important;
+    }
+
+    .select-outer {
+        position: relative;
+
+        &::after {
+            content: "";
+            position: absolute;
+            top: 19px;
+            right: 15px;
+            border-width: 7px 6px;
+            border-style: solid;
+            // border-color: fade(@light-color, 100%) transparent transparent;
+        }
+    }
+
+    select {
+        -moz-appearance: none;
+        -webkit-appearance: none;
+    }
+
+    .btn {
+        margin-top: 10px;
+    }
+
+    .form-group {
+        margin: 0px;
+    }
+
+    .p-right {
+        padding-left: 0px;
+    }
+    .p-left {
+        padding-right: 0px;
+    }
+
+    .m-right {
+        margin-right: 0px;
+    }
+    .m-left {
+        margin-left: 0px;
+    }
+}
+
+
+
+
+/**
+ * ================================
+ * Slider css
+ * ================================
+ */
+.content-slider {
+    .click {
+        display: block;
+        .transition(0.4s);
+
+        &.active {
+
+        }
+    }
+
+    .each-content {
+        display: none;
+        animation-duration: 1.2s;
+        -webkit-animation-duration: 1.2s;
+        -moz-animation-duration: 1.2s;
+        -o-animation-duration: 1.2s;
+        animation-name: fadeOutDown;
+        -webkit-animation-name: fadeOutDown;
+        -webkit-transition: -webkit-transform 0.4s, opacity 0.1s 0.3s;
+        -moz-transition: -moz-transform 0.4s, opacity 0.1s 0.3s;
+        transition: transform 0.4s, opacity 0.1s 0.3s;
+        opacity: 0;
+
+        &.active {
+            display: block !important;
+            opacity: 1 !important;
+            animation-name: fadeInDown;
+            -webkit-animation-name: fadeInDown;
+        }
+    }
+}
+
+
+
+/**
+ * ==========================
+ * Full Screen
+ * ==========================
+ */
+.full-screen {
+    position: relative;
+    overflow: hidden;
+    z-index: 2;
+
+    .half-screen {
+        z-index: 1;
+        position: absolute;
+        vertical-align: middle;
+        height: 100%;
+        width: 50%;
+        z-index: -1;
+        top: 0;
+
+        img {
+            width: 100%;
+        }
+
+        &:after,
+        &:before {
+            position: absolute;
+            height: 100%;
+            width: 100%;
+            left: 0;
+            right: 0;
+            .transition( 0.4s );
+        }
+
+        &:before {
+            //background-color: fade(@dark-color, 65%);
+        }
+
+        &:after {
+            //background-color: @main-color-1;
+            .transform-mix( @translateY: 100%, @scale: 0.9 );
+            z-index: 1;
+            opacity: 0;
+        }
+
+        &.active {
+            &:after {
+                .transform-mix( @translateY: 0%, @scale: 1 );
+                opacity: 1;
+            }
+        }
+    }
+
+    .half-screen-left {
+        left: 0;
+        background-position: top right;
+        background-size: cover;
+        float: left;
+    }
+
+    .half-screen-right {
+        right: 0;
+        background-position: top left;
+        background-size: cover;
+        float: right;
+    }
+}
+
+
+
+/**
+ * ================================
+ * Background Hidden Text OR image
+ * ================================
+ */
+.hidden-shape {
+    position: absolute;
+    font-size: 240px;
+    line-height: 170px;
+    font-weight: 700;
+    // color: fade(@shadow-color, 2.5%);
+
+    &.image {
+        width: 100%;
+        height: 200px;
+        left: 0;
+        bottom: 0;
+        background-size: contain;
+        background-repeat-y: repeat;
+    }
+}
+
+
+/**
+ * ================================
+ * Section Middle Separator
+ * ================================
+ */
+.middle-separator {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    width: 15px;
+    z-index: 11;
+
+    &::before,
+    &::after {
+        content: '';
+        position: absolute;
+    }
+
+    &::before {
+        border-left: 2px dotted;
+        // border-left-color: fade(@dark-color, 20%);
+        top: 0;
+        bottom: 0;
+        left: 50%;
+        margin-left: -1px;
+        z-index: 1;
+    }
+
+    &::after {
+        width: 15px;
+        height: 15px;
+        // background-color: @background-1;
+        border-radius: 50%;
+        border: 2px solid;
+        // border-color: @main-color-1;
+        z-index: 2;
+    }
+}
+
+
+
+
+@media (max-width: @screen-sm-max) {
+
+    
+}
+
+
+@media (max-width: @screen-xs-max) {
+    
+    /**
+     * ===============================
+     *  Defult CSS 
+     * ===============================
+     */
+    html *,
+    body,
+    p{
+        text-align: center ;
+    }
+
+
+    /**
+     * ==========================
+     * Full Screen
+     * ==========================
+     */
+    .full-screen {
+        .half-screen {
+            position: relative;
+            height: auto;
+            width: 100%;
+        }
+
+        .half-screen-left,
+        .half-screen-right {
+            right: 0;
+            left: 0;
+            float: none;
+        }
+    }
+
+
+    /**
+     * ================================
+     * Nav Defult Style
+     * ================================
+     */
+    .nav {
+        display: inline-block;
+    }
+
+
+
+    /**
+     * ===============================
+     *   Defult Button Style
+     * ===============================
+     */
+    .btn {
+        &,
+        &:last-child {
+            margin: 10px !important;
+        }
+
+        
+    }
+    
+}

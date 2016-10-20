@@ -1,0 +1,606 @@
+// CSS LIST TREE
+@import "css-tree.less";
+
+// VARIABLES 
+@import "variable.less";
+
+// This file import helping some function
+@import "../bootstrap/less/variables.less";
+@import "less-function.less";
+
+
+@media (max-width: @screen-sm-max) {
+
+	/**
+	 * ===========================
+	 * Features Section 1
+	 * ===========================
+	 */
+	.features-section-1 {
+		.part-1 {
+			.features-content {
+				margin-top: 22px;
+			}
+		}
+	}
+
+
+	/**
+	 * ===========================
+	 * Features Section 3
+	 * ===========================
+	 */
+	.features-section-3 {
+		.full-screen {
+			.half-screen {
+				width: 60%;
+				top: 55px;
+			}
+
+			.features-content {
+				margin: 15px 0;
+			}
+		}
+	}
+
+
+
+	/**
+	 * =======================
+	 * Features Section 5
+	 * =======================
+	 */
+	.features-section-5 {
+		.hidden-shape {
+			&:nth-of-type(1) {
+				top: 40%;
+			}
+		}
+
+		.part-2 {
+			.features-content {
+				margin-top: 0px;
+				text-align: center;
+			}
+			.section-header {
+				text-align: center;
+			}
+		}
+	}
+
+
+
+	/**
+	 * =======================
+	 * Features Section 7
+	 * =======================
+	 */
+	.features-section-7 {
+		.media-left {
+			img {
+				width: 80px;
+			}
+		}
+
+		.media-body {
+			padding-left: 17px;
+
+			.inner {
+				padding: 15px;
+
+		    	&::before {
+				    border-width: 8px;
+				    left: -19px;
+		    	}
+			}
+		}
+	}
+
+
+
+	/**
+	 * ==========================
+	 * Features Section 16
+	 * ==========================
+	 */
+	.features-section-16 {
+		.each-item {
+		    .inner {
+			    width: 150px;
+			    height: 150px;
+		    }
+		}
+	}
+
+
+
+	/**
+	 * ==========================
+	 * Features Section 17
+	 * ==========================
+	 */
+	.features-section-17 {
+		.each-item {
+			.media-left {
+				img {
+					width: 120px;
+				}
+			}
+
+			.media-body {
+				padding: 25px;
+			}
+		}
+	}
+
+
+
+
+	/**
+	 * ====================================
+	 * Footer Style 1
+	 * ====================================
+	 */
+	.footer-section-1 {
+		&,
+		.title {
+			text-align: center !important;
+		}
+
+		.about {
+			.logo {
+				margin: auto;
+				float: none;
+			}
+
+			.nav {
+				display: inline-block;
+			}
+		}
+
+		.other-link {
+			margin-top: 40px;
+		}
+
+		.round-shape {
+			.center( 200px, 200px );
+
+	    	&::before {
+	    		.center( 270px, 270px );
+	    	}
+	    	&::after {
+	    		.center( 340px, 340px );
+	    	}
+	    }
+	}
+
+
+	
+}
+
+
+@media (max-width: @screen-xs-max) {
+	/**
+	 * =======================
+	 * Navigation
+	 * =======================
+	 */
+	.main-navbar-top {
+
+		.navbar-header {
+			.navbar-toggle {
+				margin-top: 18px;
+				margin-bottom: 18px;
+
+				.icon-bar {
+					// background-color: @main-color-1;
+				}
+			}
+		}
+
+		.navbar-collapse {
+			border-top: 1px solid;
+			// border-top-color:  fade(@shadow-color, 10%);
+		}
+
+		.navbar-nav {
+			li {
+				float: left;
+
+				.btn-nav {
+				    padding: 15px 13px;
+				}
+			}
+		}
+	}
+
+
+	/**
+	 * ===============================
+	 * Header Style 1
+	 * ===============================
+	*/
+	.header {
+
+		.mr-big-top {
+			margin-top: 150px
+		}
+
+		.mr-big-bottom {
+			margin-bottom: 150px
+		}
+
+		.mr-big {
+		    margin: 150px 0 150px 0;
+		}
+
+		.bottom-part {
+		    .apple {
+		    	left: 50%;
+		    	margin-left: -92px !important;
+		    }
+		}
+	}
+
+
+
+	/**
+	 * ===========================
+	 * Features Section 1
+	 * ===========================
+	 */
+	.features-section-1 {
+		.part-1 {
+			.features-content {
+			    padding-left: 15px;
+			}
+		}
+	}
+
+
+
+	/**
+	 * ===========================
+	 * Features Section 2
+	 * ===========================
+	 */
+	.features-section-2 {
+		.contact-address {
+			a {
+				span {
+				    font-size: 18px;
+				}
+
+				.number {
+				    padding: 8px 2px;
+				}
+			}
+		}
+	}
+
+
+
+	/**
+	 * ===========================
+	 * Features Section 3
+	 * ===========================
+	 */
+	.features-section-3 {
+		.full-screen {
+			.half-screen {
+				width: 100%;
+				top: 55px;
+			}
+		}
+
+		.clients-logo {
+			margin-top: 45px;
+
+			.nav {
+				li {
+					width: 50%;
+
+					a {
+						width: 85%;
+						display: inline-block;
+					}
+				}
+			}
+		}
+	}
+
+
+
+	/**
+	 * =======================
+	 * Features Section 5
+	 * =======================
+	 */
+	.features-section-5 {
+		.hidden-shape {
+			&.image {
+		        background-size: cover;
+	    		height: 130px;
+			}
+		}
+		.sync1 {
+			.item {
+		    	padding: 25px 0px 0 0px;
+			}
+		}
+
+		.each-table {
+			.table-single {
+
+				&.left {
+					left: 0px;
+				}
+			}
+
+		}
+	}
+
+
+
+	/**
+	 * =======================
+	 * Features Section 6
+	 * =======================
+	 */
+	.features-section-6 {
+		
+	}
+
+	.pricing-table {
+		.each-table {
+			margin-bottom: 15px;
+
+			.table-single {
+				// .box-shadow(0, 0px, 0px, 0, fade(@shadow-color, 00%));
+			}
+	    }
+
+		&.pricing-table-js {
+			.each-table {
+				.left,
+				.right {
+		    		z-index: 2;
+		    		right: 0;
+		    		left: 0;
+
+		    		.btn {
+				    	// background-color: @main-color-1;
+				    }
+		    	}
+
+		    	.table-single {
+					.transform-mix( @scale: 1 );
+
+					&.active {
+						// .box-shadow(0, 8px, 45px, 0, fade(@shadow-color, 10%));
+					}
+				}
+		    }
+		}
+	}
+
+
+
+	/**
+	 * =======================
+	 * Features Section 7
+	 * =======================
+	 */
+	.features-section-7 {
+		.media-left {
+			img {
+				width: 50px;
+			}
+		}
+	}
+
+
+
+	/**
+	 * =======================
+	 * Features Section 10
+	 * =======================
+	 */
+	.features-section-10 {
+		.part-2 {
+	        .media {
+	            margin-bottom: 15px; 
+	        }
+	    }
+	}
+
+
+
+	/**
+	 * ===============================
+	 * Features Section 12
+	 * ===============================
+	 */
+	.features-section-12 {
+
+		.contact-address {
+			.each-address {
+	        }
+		}
+
+		.single-form {
+			.form-control {
+				text-align: center;
+			}
+		}
+
+		.each-address {
+        	margin-bottom: 20px;
+			
+			.media-left,
+			.media-body {
+				display: block;
+				width: auto;
+			}
+
+			.media-left {
+				padding-right: 0px !important;
+			}
+		}
+	}
+
+
+
+	/**
+	 * ==========================
+	 * Features Section 13
+	 * ==========================
+	 */
+	.features-section-13 {
+		.faq-group {
+			.faq-trigger,
+			.faq-content {
+			    padding: 25px 50px 25px 50px;
+			}
+
+			.faq-trigger {
+			    &:before {
+				    left: 17px;
+				}
+			}
+		}
+	}
+
+
+
+	/**
+	 * ==========================
+	 * Features Section 16
+	 * ==========================
+	 */
+	.features-section-16 {
+		.each-item {
+			margin-bottom: 30px;
+
+		    .inner {
+			    &::after {
+				    width: initial;
+				    height: 100%;
+				    border-top: 0px dotted;
+				    border-left: 2px dotted;
+				    // border-color: fade(@shadow-color, 15%);
+				    left: 50%;
+				    top: 100%;
+				    .transform-mix( @translateX: -50% );
+			    }
+		    }
+
+		    &:last-child {
+		    	margin-bottom: 0px;
+		    }
+		}
+	}
+	.features-section-16-2 {
+		.part-2 {
+			top: -75px;
+		}
+	}
+
+
+
+	/**
+	 * ==========================
+	 * Features Section 17
+	 * ==========================
+	 */
+	.features-section-17 {
+		.each-item {
+			margin-bottom: 15px;
+
+			.media-left {
+				img {
+					width: 80px;
+				}
+			}
+		}
+	}
+	.client-logo {
+		li {
+		    margin-left: 13px;
+		    margin-right: 13px;
+		}
+	}
+
+
+
+	/**
+	 * ==========================
+	 * Features Section 19
+	 * ==========================
+	 */
+	.features-section-19 {
+		.speakers-content {
+			.each-item {
+
+				.media-left {
+
+					img {
+						width: 60px;
+					}
+				}
+
+				.media-body {
+					padding-left: 10px;
+
+					.inner {
+						padding: 15px;
+					}
+
+					.panel-heading,
+					.panel-body,
+					.panel-footer {
+						padding: 0px;
+						margin-top: 20px;
+					}
+
+					.panel-heading {
+						margin-top: 0px;
+					}
+				}
+			}
+		}
+	}
+
+
+
+
+
+	/**
+	 * ====================================
+	 * Footer Style 1
+	 * ====================================
+	 */
+	.footer-section-1 {
+	    .footer-heading {
+	    	.hidden-shape {
+	    		font-size: 117px;
+	    	}
+	    }
+
+	    .other-link {
+	    	.each-section {
+	    		margin-bottom: 30px;
+
+	    		&:last-child {
+	    			margin-bottom: 0px;
+	    		}
+	    	}
+	    }
+	}
+
+
+
+
+
+}
+

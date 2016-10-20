@@ -1,0 +1,158 @@
+﻿     <!-- Yön-->
+<div style="background-color:#232323; opacity:0.8; margin-bottom:10px; margin-top:15px;  border-width:0px 0px 1px 0px; width:300px; height:20px; border-radius:4px;">
+    <input type="radio" name="yon" value="gidis">Gidiş
+    <input type="radio" name="yon" value="gidis-donus" style="margin-left:20px;">Gidiş-Dönüş<br>
+</div>
+<hr style="opacity:0.4;" />
+
+<!-- Gidiş Tarihi -->
+<div>
+    Gidiş Tarihi
+    <input type="date" name="gidisTarihi" style="background-color:white; color:black; opacity:0.8; margin-bottom:10px;border-width:0px 0px 1px 0px; width:200px; height:40px; border-radius:4px; text-align:center; margin-left:10px;">
+</div>
+
+<div>
+    Dönüş Tarihi
+    <!-- Dönüş Tarihi -->
+    <input type="date" name="donusTarihi" style="background-color:white; color:black; opacity:0.8; margin-bottom:10px;border-width:0px 0px 1px 0px; width:200px; height:40px; border-radius:4px;text-align:center">
+</div>
+
+
+
+<!-- Transfer Alış Yeri -->
+<div>
+    <hr style="opacity:0.4;" />
+    @*@Html.Label("Transfer Alış",new {@style="margin-top:15px;" }) <hr style="opacity:0.1;" />*@
+    @Html.Label("Nereden")
+    <select name="transferAlis" id="Transfer1" style="margin-left:21px; background-color:white; color:black; opacity:0.8; margin-bottom:10px;border-width:0px 0px 1px 0px; width:200px; height:40px; border-radius:4px;text-align:center">
+        <option value="Antalya_Havaalani">Antalya Havaalani</option>
+        <option value="Kundu">Kundu</option>
+        <option value="Belek_Bogazkent">Belek-Boğazkent</option>
+        <option value="Side_Gundogdu">Side-Gündoğdu</option>
+        <option value="Side_Colakli">Side-Çolaklı</option>
+        <option value="Side_Kumkoy">Side-Kumköy</option>
+        <option value="Manavgat">Manavgat</option>
+        <option value="Alanya">Alanya</option>
+        <option value="Merkez_Konyaalti">Merkez-Konyaaltı</option>
+        <option value="Merkez_Lara">Merkez-Lara</option>
+        <option value="Kemer_Beldibi">Kemer-Beldibi</option>
+        <option value="Kemer_Goynuk">Merkez-Göynük</option>
+        <option value="Kiris">Kiriş</option>
+        <option value="Camyuva">Çamyuva</option>
+        <option value="Tekirova">Tekirova</option>
+        <option value="Adrasan">Adrasan</option>
+    </select>
+</div>
+
+<div>
+    <!-- Transfer Teslim Yeri -->
+    @*@Html.Label("Transfer Bırakış", new { @style = "margin-top:15px; margin-bottom:0px;" }) <hr style="opacity:0.1;" />*@
+    @Html.Label("Nereye")
+    <select name="transferBirakis" id="Transfer2" style="margin-left:29px; background-color:white; color:black; opacity:0.8; margin-bottom:10px;border-width:0px 0px 1px 0px; width:200px; height:40px; text-align:center;border-radius:4px;text-align:center">
+        <option value="Antalya_Havaalani">Antalya Havaalani</option>
+        <option value="Kundu">Kundu</option>
+        <option value="Belek_Bogazkent">Belek-Boğazkent</option>
+        <option value="Side_Gundogdu">Side-Gündoğdu</option>
+        <option value="Side_Colakli">Side-Çolaklı</option>
+        <option value="Side_Kumkoy">Side-Kumköy</option>
+        <option value="Manavgat">Manavgat</option>
+        <option value="Alanya">Alanya</option>
+        <option value="Merkez_Konyaalti">Merkez-Konyaaltı</option>
+        <option value="Merkez_Lara">Merkez-Lara</option>
+        <option value="Kemer_Beldibi">Kemer-Beldibi</option>
+        <option value="Kemer_Goynuk">Merkez-Göynük</option>
+        <option value="Kiris">Kiriş</option>
+        <option value="Camyuva">Çamyuva</option>
+        <option value="Tekirova">Tekirova</option>
+        <option value="Adrasan">Adrasan</option>
+    </select>
+</div>
+<hr style="opacity:0.4" />
+
+<div>
+    @Html.Label("Yetişkin")
+    <select name="yetiskinSayisi" id="Yetiskin" style="background-color:white; color:black; opacity:0.8; margin-bottom:10px;border-width:0px 0px 1px 0px; width:100px; height:40px; border-radius:4px;text-align:center">
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>
+        <option value="6">6</option>
+        <option value="7">7</option>
+        <option value="8">8</option>
+        <option value="9">9</option>
+        <option value="10">10</option>
+        <option value="11">11</option>
+        <option value="12">12</option>
+        <option value="13">13</option>
+        <option value="14">14</option>
+        <option value="15">15</option>
+        <option value="16">16</option>
+        <option value="17">17</option>
+        <option value="18">18</option>
+        <option value="19">19</option>
+        <option value="20">20</option>
+        <option value="30">30</option>
+        <option value="31">31</option>
+        <option value="32">32</option>
+        <option value="33">33</option>
+        <option value="34">34</option>
+        <option value="35">35</option>
+        <option value="36">36</option>
+        <option value="37">37</option>
+        <option value="38">38</option>
+        <option value="39">39</option>
+        <option value="40">40</option>
+    </select>
+
+
+
+    @Html.Label("Çocuk", new { @style = "margin-left:20px;" })
+    <select name="cocukSayisi" id="Cocuk" style="background-color:white; color:black; opacity:0.8; margin-bottom:10px;border-width:0px 0px 1px 0px; width:100px; height:40px; border-radius:4px;text-align:center">
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>
+        <option value="6">6</option>
+        <option value="7">7</option>
+        <option value="8">8</option>
+        <option value="9">9</option>
+        <option value="10">10</option>
+        <option value="11">11</option>
+        <option value="12">12</option>
+        <option value="13">13</option>
+        <option value="14">14</option>
+        <option value="15">15</option>
+        <option value="16">16</option>
+        <option value="17">17</option>
+        <option value="18">18</option>
+        <option value="19">19</option>
+        <option value="20">20</option>
+        <option value="30">30</option>
+        <option value="31">31</option>
+        <option value="32">32</option>
+        <option value="33">33</option>
+        <option value="34">34</option>
+        <option value="35">35</option>
+        <option value="36">36</option>
+        <option value="37">37</option>
+        <option value="38">38</option>
+        <option value="39">39</option>
+        <option value="40">40</option>
+    </select>
+
+
+</div>
+<hr style="opacity:0.4" />
+
+<!-- Name -->
+<input name="adSoyadT" class="form-control" type="text" placeholder="Ad&Soyad*" required="" style="background-color:#232323; color:white; opacity:0.8; margin-bottom:10px;border-width:0px 0px 1px 0px;">
+<!-- Email -->
+<input name="emailT" class="form-control" type="text" placeholder="Email*" required="" style="background-color:#232323;opacity:0.8;margin-bottom:10px;border-width:0px 0px 1px 0px;">
+<!-- Tel -->
+<input name="telNoT" class="form-control" type="text" placeholder="Telefonununuz*" required="" style="background-color:#232323;opacity:0.8;margin-bottom:10px;border-width:0px 0px 1px 0px;">
+
+<div class="btn-form text-center col-xs-12" style="margin-top:30px; margin-bottom:30px;">
+    <input type="submit" class="btn btn-fill right-icon" value="REZERVASYON YAP">
+</div>

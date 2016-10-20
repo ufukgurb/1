@@ -1,0 +1,1246 @@
+﻿@model ena3.Models.Rezervasyon
+@using Newtonsoft.Json
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+<!--[if IE 7]>    <html class="no-js ie7 oldie" lang="en-US"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js ie8 oldie" lang="en-US"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html lang="tr">
+<head>
+
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8/jquery.min.js" type="text/javascript"></script>   @*Referans ekledeki ajax için eklendi*@
+
+
+    <!-- TITLE OF SITE -->
+    <title>ReferansVip | Antalya Vip Taşımacılık</title>
+
+    <!-- Meta -->
+    <meta charset="utf-8">
+    <meta name="description" content="Referans Vip Transfer" />
+    <meta name="keywords" content="rezervasyon , antalya , referans , vip , transfer , referansvip , vip taşımacılık antalya , antalya havaalanı vip , antalya vip taşıma" />
+    <meta name="developer" content="Ufuk Gürbulak">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+    <!-- FAV AND TOUCH ICONS   -->
+    <link rel="icon" href="~/images/favicon.png">
+    @*<link rel="apple-touch-icon" href="~/images/apple-touch-icon.png">
+        <link rel="apple-touch-icon" sizes="72x72" href="~/images/apple-touch-icon-72x72.png">
+        <link rel="apple-touch-icon" sizes="114x114" href="~/images/apple-touch-icon-114x114.png">*@
+
+    <!-- BOOTSTRAP CSS -->
+    @*<link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">*@
+    <link rel="stylesheet" href="~/Content/bootstrap/css/bootstrap.min.css">
+
+    <!-- FONT ICONS -->
+    <link rel="stylesheet" href="~/Content/icons/themespiders/styles.css">
+
+    <!--  SWIPER CSS  -->
+    <link rel="stylesheet" href="~/Content/css/plagin-css/swiper.min.css">
+
+    <!-- PRELOADER CSS -->
+    <link rel="stylesheet" href="~/Content/css/plagin-css/preloader.css">
+
+    <!--   COUSTOM CSS link  -->
+    <link rel="stylesheet" href="~/Content/css/style.css">
+    <link rel="stylesheet" href="~/Content/css/responsive.css">
+
+    <!-- COLOR -->
+    <link rel="stylesheet" href="~/Content/css/colors-dark/color-1.css" type="text/css" />
+    <!-- <link rel="stylesheet" href="css/colors-dark/color-2.css" type="text/css"/> -->
+    <!-- <link rel="stylesheet" href="css/colors-dark/color-3.css" type="text/css"/> -->
+    <!-- <link rel="stylesheet" href="css/colors-dark/color-4.css" type="text/css"/> -->
+    <!-- TYPOGRAPHY -->
+    <link rel="stylesheet" href="~/Content/css/typography/typography-1.css" type="text/css" />
+    <!-- <link rel="stylesheet" href="css/typography/typography-2.css" type="text/css"/> -->
+    <!-- <link rel="stylesheet" href="css/typography/typography-3.css" type="text/css"/> -->
+    <!-- <link rel="stylesheet" href="css/typography/typography-4.css" type="text/css"/> -->
+    <!--[if lt IE 9]>
+        <script src="js/plagin-js/html5shiv.js"></script>
+        <script src="js/plagin-js/respond.min.js"></script>
+    <![endif]-->
+
+
+
+
+
+</head>
+
+
+<body class="js-scroll-container">
+
+    <!-- Start: Navbar  Area  SÜREKLİ AÇILIR TEPE NAVBAR (1)
+    ============================= -->
+    <nav class="navbar navbar-fixed-top main-navbar-top" id="main-navbar-top">
+        <div class="container relative">
+            <div class="navbar-header">
+
+                <!-- Menu Button show Mobile view -->
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#js-navbar-menu" aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar icon-bar-top"></span>
+                    <span class="icon-bar icon-bar-middle"></span>
+                    <span class="icon-bar icon-bar-bottom"></span>
+                </button>
+
+                <!-- TEMPLATE LOGO LIGHT -->
+                @*<a class="navbar-brand light-logo" href="index.html"><img src="~/images/logo-color.png" alt="" class="img-responsive"></a>*@
+                <a class="navbar-brand light-logo" href="#header"><img src="~/images2/referansviplogo.png" alt="" class="img-responsive"></a> @*1.resim logo-color.png*@
+                <!-- TEMPLATE LOGO DARK -->
+
+            </div>
+
+            <!-- Main Menu List -->
+            <div class="collapse navbar-collapse" id="js-navbar-menu">
+                <ul id="navbar-nav" class="nav navbar-nav navbar-right">
+                    <li class="active"><a class="btn-nav" href="#header">ANASAYFA</a></li>
+                    <li><a class="btn-nav" href="#hakkimizda">HAKKIMIZDA</a></li>
+                    <li><a class="btn-nav" href="#hizmetlerimiz">HİZMETLERİMİZ</a></li>
+                    <li><a class="btn-nav" href="#referanslar">REFERANSLAR</a></li>
+                    <li><a class="btn-nav" href="#filomuz">FİLOMUZ</a></li>
+                    <li><a class="btn-nav" href="#rezervasyon">REZERVASYON</a></li>
+                    <li><a class="btn-nav" href="#iletisim">İLETİŞİM</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+    <!-- End: Navbar Area
+    ============================= -->
+    <!-- Start: Header Section GİRİŞ AÇILIR SAYFA (2)
+    ================================ -->
+    <header class="header bg-1" id="header" style="background-image:url('../../images2/vito kapak (1920 x 1080).jpg') ">
+        <div class="overlay-color-dark">
+            <div class="container">
+                <div class="row">
+
+                    <div class="vertical-middle part-1 col-sm-10 col-sm-offset-1">
+
+                        <div class="part-inner text-center mr-big" style="margin-top:100px;">
+                            <p> <img src="~/images2/logo beyaz 256 x257.png"></p>
+                       
+                            <!--  Header SubTitle Goes here -->
+                            <!-- Header Title Goes here -->
+                   
+                            <h1 id="xyz1" style="color:dodgerblue; display:none">&#x2714;</h1> 
+                            <h1 id="xyz2" style="color:dodgerblue; display:none">Rezervasyon işleminiz başarıyla tamamlanmıştır.</h1>
+                            <h1 id="xyz3" style="color:palevioletred; display:none">@ViewData["rezervasyonKodu"]</h1>
+                         
+                            <h1 id="asd1" style="color:dodgerblue; display:none">&#x2714;</h1>
+                            <h1 id="asd2" style="color:dodgerblue; display:none">Mesajınız başarıyla gönderilmiştir.</h1> 
+                            <h1 class="title">konfor huzur ile buluştu</h1>
+
+                            <!-- Button Area -->
+                            <div class="btn-form btn-scroll">
+                                <a href="#ticket" class="btn btn-fill mr-top">REZERVASYON</a>
+                                <div id="google_translate_element"></div>
+                                <script type="text/javascript">
+                                    function googleTranslateElementInit() {
+                                        new google.translate.TranslateElement({ pageLanguage: 'tr', includedLanguages: 'en,ru,tr,de', autoDisplay: false }, 'google_translate_element');
+                                    }
+                                </script>
+                                <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+
+                            </div>
+
+                        </div>
+                    </div> <!-- End: .part-1 -->
+
+                </div> <!-- End: .row -->
+            </div> <!-- End: .container -->
+
+        </div> <!-- End: .overlay-color -->
+    </header>
+
+    <!-- End: Header Section
+    ================================ -->
+    <!-- ARADAKİ 4 LİNK KUTUCUĞU (3)
+     --------------------------------->
+
+    <section class="features-section-16 section features-section-16-2 bg-dark">
+        <div class="container">
+            <div class="row">
+
+                <style>
+                    .features-section-16 .each-item .inner {
+                        width: 130px;
+                        height: 130px;
+                    }
+                </style>
+
+                <!-- Start: Some Feature Main Contant -->
+                <div class="part-2 col-xs-12">
+                    <div class="row" style="margin-top:35px;">
+                        <div class="each-item col-sm-3 col-xs-12">
+
+
+                            <div class="inner">
+                                <div class="group">
+                                    <h4 class="title" style="color:white;">Huzur</h4>
+                                </div>
+                            </div>
+
+
+                        </div>
+
+                        <div class="each-item col-sm-3 col-xs-12">
+
+
+                            <div class="inner">
+                                <div class="group">
+                                    @*<h3 class="counter number">12</h3>*@
+                                    <h4 class="title" style="color:white;">Güven</h4>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div class="each-item col-sm-3 col-xs-12">
+
+
+                            <div class="inner">
+                                <div class="group">
+                                    @*<h3 class="counter number">39</h3>*@
+                                    <h4 class="title" style="color:white;">Kalite</h4>
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                        <div class="each-item col-sm-3 col-xs-12">
+
+
+                            <div class="inner">
+                                <div class="group">
+                                    @*<h3 class="counter number">22</h3>*@
+                                    <h4 class="title" style="color:white; ">Konfor</h4>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <!-- count down -->
+
+                    </div> <!-- End: .row -->
+                </div> <!-- End: .features-item -->
+                <!-- End: Some Feature Main Contant -->
+
+            </div> <!-- End: .row -->
+        </div> <!-- End: .container -->
+    </section>
+    <!-- ARADAKİ 4 LİNK KUTUCUĞU SON-->
+    <!-- Start: Features Section  HAKKIMIZDA (4)
+          ================================== -->
+    <section id="hakkimizda" class="features-section-1 section bg-dark">
+        <div class="container">
+            <div class="row section-separator sp-bottom">
+
+                <div class="features-image col-md-4">
+                    <img src="~/images2/vip içi 2.png" alt="App Image" class="img-responsive" style="border:1px solid; border-color:dodgerblue; margin-top:260px;">
+                </div>
+                <div class="features-content col-md-8">
+
+                    <!-- Start: Section Heading -->
+                    <div class="section-header text-left">
+                        <h1 class="section-heading" style="margin-top:90px;">
+                            @*<span class="light">ENA</span>&nbsp;*@
+                            Bizleri yakından tanıyın
+                        </h1>
+                        <div class="section-header-separator"></div>
+                    </div>
+                    <!-- End: Section Heading -->
+
+                    <div class="detail">
+                        <p><b>ReferansVip</b> ülkemizde her geçen gün büyüyen turizm sektörünün ihtiyaçları karşısında hızla yapılanan turizm taşımacılığı ve lüks araç kiralaması alanında Antalya merkezli dinamik bir şirkettir.</p>
+                        <p>Günümüzde ,  gerek kurumsal gerekse bireysel anlamda önemli bir ihtiyaca cevap veren turizm taşımacılığı, çeşitli düzeylerde birçok  firma  ve taşımacı arasından yetki belgeli, kurumsal, güvenilir, profesyonel işleyişe sahip bir firma ile çalışmak, kaçınılmaz bir gereklilik halini almıştır.</p>
+                        <p>ReferansVip gerek bireysel gerekse kurumsal müşteri taleplerine göre işinde uzman ekibi ve kendine ait birbirinden özel tasarımlara sahip, gerçek anlamda VIP Minibüsleri uzman sürücü ve hostesleri ile çok özel ve seçkin konuklara hizmet vermektedir. </p>
+                        <p>ReferansVip ihtiyaçlarınız doğrultusunda belirlenen araçlar ile; iş toplantılarında, turistik gezilerde, kongre, seminer organizasyonlarda,  özel günlerde,  Havalimanı – Otel transferlerinde, aylık, günlük veya saatlik ihtiyaç duyduğunuz her an size ve misafirlerinize özel çözümler üreterek şehiriçi ve şehirlerarası hizmet vermektedir.</p>
+                        <p>Başta Antalya Airport Transfer hizmetleri olmak üzere misafirlerimizin beklentilerini karşılamak, tam zamanında kusursuz hizmet vermek için uzman ekibi ve araçları ile ReferansVip siz değerli müşterilerinin hizmetinizdedir.</p>
+                    </div> <!-- End: .detail -->
+
+                </div> <!-- End: .features-content -->
+
+            </div> <!-- End: .row -->
+        </div> <!-- End: .container -->
+    </section>
+    <!-- End: Features Section 1
+    ================================== -->
+    <!-- Start: Features Section 1   HİZMETLERİMİZ (5)
+    ================================== -->
+    <section id="hizmetlerimiz" class="features-section-1 section bg-dark" style="background-image:url('../../images2/arkaplan/1 -hizmtlerimiz.jpg');
+                    background-position:center center;
+                    background-repeat:no-repeat;
+                    /*background-attachment:fixed;*/
+                    background-size:cover;">
+
+        <div class="container">
+            <div class="row section-separator sp-bottom">
+
+                <!-- Start: Section Heading -->
+                @*<div class="section-header col-sm-6 col-sm-offset-3">*@
+
+                <div class="section-header">
+                    @*<p class="sub-title">about</p>*@
+                    <h2 class="section-heading" style="margin-top:90px;">Hizmetlerimiz</h2>
+                    <div class="section-header-separator"></div>
+                    @*<p class="sub-title">Donec sed odio dui. Aenean eu leo quam. Pellentesque ornare sem laca quam venenatis vestibulum.</p>*@
+                </div>
+                <!-- End: Section Heading -->
+
+                <div class="part-1 col-xs-12">
+                    <div class="row">
+
+                        @*<div class="features-image col-sm-4 col-sm-push-6">
+                                <img src="~/images2/vip içi.jpg" alt="Event Image" class="img-responsive">
+                            </div>*@
+
+                        <div class="features-content col-sm-7 ">
+
+                            <!-- Start: Section Heading -->
+                            @*<div class="section-header text-left">
+                                    <h3 class="section-heading">
+                                        <span class="light">ABOUT</span>&nbsp;
+                                        OUR EVENT
+                                    </h3>
+                                </div>*@
+                            <!-- End: Section Heading -->
+
+                            <div class="detail">
+
+
+
+                                <div class="media list-view">
+
+                                    <div class="media-left icon-outer-border">
+
+                                        <i class="fa fa-linea-basic-10-41"></i>
+
+                                    </div>
+
+                                    <div class="media-body">
+                                        <p style="color:dodgerblue; margin-bottom:3px;">Havaalanı Transferi</p>
+                                        <p>Sizleri ve misafirlerinizi uzman ekibimizle karşılar, park yeri, otopark bedeli, trafik stresi ve yorgunluk hissettirmeden gideceğiniz yere kolaylıkla ulaştırırız</p>
+                                    </div>
+                                </div> <!-- End: .melia -->
+
+
+
+
+                                <div class="media list-view">
+                                    <div class="media-left icon-outer-border">
+                                        <i class="fa fa-linea-basic-10-41"></i>
+                                    </div>
+                                    <div class="media-body">
+                                        <p style="color:dodgerblue;margin-bottom:3px;">Kişiye Özel Transfer</p>
+                                        <p>Evinizden,  işyerinizden, otelinizden alarak problemsiz bir şekilde gündüz ve gece aktivitelerinize ulaştırır, bitiminde geri alırız. Hem şehrin sıkıntılarını düşünmezsiniz hemde firmanıza ve sizlere zaman , prestij kazandırırız. </p>
+                                    </div>
+                                </div> <!-- End: .melia -->
+
+
+
+
+                                <div class="media list-view">
+                                    <div class="media-left icon-outer-border">
+                                        <i class="fa fa-linea-basic-10-41"></i>
+                                    </div>
+                                    <div class="media-body">
+                                        <p style="color:dodgerblue;margin-bottom:3px; ">Grup Transferleri</p>
+                                        <p>Seminer, toplantı, konferans gibi toplu organizasyonlarınıza katılımcıları sizin bir temsilciniz olarak konforlu araçlarımızla dilediğiniz yere ulaştırırız.</p>
+                                    </div>
+                                </div> <!-- End: .melia -->
+
+
+
+
+
+                                <div class="media list-view">
+                                    <div class="media-left icon-outer-border">
+                                        <i class="fa fa-linea-basic-10-41"></i>
+                                    </div>
+                                    <div class="media-body">
+                                        <p style="color:dodgerblue; margin-bottom:3px;">Organizasyon Taşımacılığı</p>
+                                        <p>Organizasyonlarınızda birçok ülke ve şehirden gelen misafirlerin havalimanlarından karşılanması, konaklama,  toplantı vs..planlanan güzergahlara ulaşımları için size veya ihtiyaçlarına özel Minibüs veya Otobüslerle ulaşım hizmetlerinin tamamını organize ediyoruz. </p>
+                                    </div>
+                                </div> <!-- End: .melia -->
+
+
+
+
+                                <div class="media list-view">
+                                    <div class="media-left icon-outer-border">
+                                        <i class="fa fa-linea-basic-10-41"></i>
+                                    </div>
+                                    <div class="media-body">
+                                        <p style="color:dodgerblue;margin-bottom:3px;">Shuttle Transfer</p>
+                                        <p>Havaalanı-Otel transferlerinde işadamlarına ve vip hizmet arayansiz değerli müşterilerimize uygun hizmetler ve seçenekler sunuyoruz.</p>
+                                    </div>
+                                </div> <!-- End: .melia -->
+
+
+
+                                <div class="media list-view">
+                                    <div class="media-left icon-outer-border">
+                                        <i class="fa fa-linea-basic-10-41"></i>
+                                    </div>
+                                    <div class="media-body">
+                                        <p style="color:dodgerblue;margin-bottom:3px;">Gelin Arabası</p>
+                                        <p>Gelin arabası taleplerinizi, deneyimli ve eğitimli şoförlerimizle ve firmamıza ait kiralık Mercedes araçlarımızla hizmet veriyoruz. Nişan götürme, gelin alma, sünnet gezisi gibi günleriniz de unutulmaz olmalı. Size ve sevdiklerinize keyifli ve güvenli yolculuk imkanı sunuyoruz.</p>
+                                    </div>
+                                </div> <!-- End: .melia -->
+
+
+                                <div class="media list-view">
+                                    <div class="media-left icon-outer-border">
+                                        <i class="fa fa-linea-basic-10-41"></i>
+                                    </div>
+                                    <div class="media-body">
+                                        <p style="color:dodgerblue;margin-bottom:3px;">Araç Kiralama</p>
+                                        <p>Birbirinden farklı araç çeşitleri ile size bol hareketlilik ve özgürlük sağlayacak yepyeni bir hizmet sunuyor.</p>
+                                    </div>
+                                </div> <!-- End: .melia -->
+
+
+                            </div> <!-- End: .detail -->
+
+                        </div> <!-- End: .features-content -->
+                        <!-- Divin resimli olan sağ tarafı-->
+                        @*<div class="features-image col-sm-4">*@
+
+
+
+                        <div class="col-sm-5" style="margin-top:300px;">
+                            <img src="~/images2/arkaplan/5 - hizmetlerimiz yan.jpg" alt="Event Image" class="" style="border:1px solid; border-color:dodgerblue; height:350px; width:450px; max-width:100%; height:auto; ">
+                        </div>
+
+
+
+                    </div> <!-- End: .row -->
+                </div> <!-- End: .part-1 -->
+
+            </div> <!-- End: .row -->
+        </div> <!-- End: .container -->
+    </section>
+    <!-- End: Features Section 1
+
+
+    ================================== -->
+    <!-- Start: Features Section 16   REFERANSLAR (6)
+    ================================== -->
+    @*<section class="features-section-16 section" style="background-image:url(../../images2/vito-8.jpg); background-size:cover; height:1280px;">*@
+
+
+
+    <section id="referanslar" class="features-section-16 section"
+             style="background-image:url('../../images2/arkaplan/6 -referanslar.jpg'); background-size:cover; /*height:1280px;*/
+                    background-position:center center;
+                    background-repeat:no-repeat;
+                    /*background-attachment:fixed;*/
+                    background-size:cover;
+                    ">
+
+
+        <div class="container">
+            <div class="row section-separator">
+
+
+
+
+                <!-- Start: Section Heading -->
+                <div class="section-header col-md-10 col-md-offset-1">
+                    @*<p class="sub-title">tools</p>*@
+                    <h2 class="section-heading">Referanslar</h2>
+                    <div class="section-header-separator"></div>
+                </div>
+                <!-- End: Section Heading -->
+
+
+                <div class="clearfix"></div>
+
+
+                <!-- Start: Some Feature Main Contant -->
+                <div class="part-2 col-xs-12">
+
+                    <div class="row" id="referansResimler">
+
+
+
+                        <script type="text/javascript">
+                            $.ajax({
+                                type: 'POST',
+                                url: 'ReferansVip/ListeleReferansJson',      // [HttpPost] olan actionview ismini yazıyoruz , buradan json formatında modeldeki verilerimiz geliyor
+                                contentType: "application/json; charset=utf-8",
+                                dataType: "json",
+                                success: function (data) {
+
+                                    $sayac = 0;
+
+                                    $.each(data, function (i, item) {
+
+                                        if (item.durum2 == 1) {
+                                            $("#referansResimler").append(" <div class='each-item col-sm-3 col xs-12'> <div> "
+                                                + item.referansResimUrl + "style = 'border-radius:25px; height:200px; width:190px; border:1px solid; border-color:dodgerblue'" +
+                                                "/>" + "<h4 style='text-align:center;'>" + item.referansResimAdi + "</h4> </div> </div> ")
+                                            $sayac++;
+                                            if ($sayac == 4) return false;
+                                        }
+                                    })
+                                }
+                            })
+                        </script>
+
+                        @*<div class="each-item col-sm-3 col-xs-12">
+                                <div>
+
+                                    <img src="~/images2/ref 02.jpg" style="border-radius:25px; height:240px; width:230px; border:1px solid; border-color:dodgerblue">
+                                    <h4 style="text-align:center;">Vatan Şaşmaz</h4>
+
+                                </div>
+                            </div> <!-- End: .each-item -->
+
+
+
+
+
+                            <div class="each-item col-sm-3 col-xs-12">
+                                <div>
+                                    <div>
+
+                                        <img src="~/images2/ref 01.jpg" style="border-radius:25px; height:240px; width:230px; border:1px solid; border-color:dodgerblue">
+                                        <h4 style="text-align:center;">Ebru Gündeş</h4>
+
+                                    </div>
+                                </div>
+                            </div> <!-- End: .each-item -->
+
+
+
+
+
+                            <div class="each-item col-sm-3 col-xs-12">
+                                <div>
+
+                                    <img src="~/images2/ref 03.jpg" style="border-radius:25px; height:240px; width:230px; border:1px solid; border-color:dodgerblue">
+                                    <h4 style="text-align:center;">linet</h4>
+                                </div>
+                            </div> <!-- End: .each-item -->
+
+
+
+
+                            <div class="each-item col-sm-3 col-xs-12">
+                                <div>
+
+                                    <img src="~/images2/ref 02.jpg" style="border-radius:25px; height:240px; width:230px; border:1px solid; border-color:dodgerblue">
+                                    <h4 style="text-align:center;">Vatan Şaşmaz</h4>
+                                </div>
+                            </div> <!-- End: .each-item -->*@
+
+
+                    </div> <!-- End: .row -->
+
+
+                    <div class="row" style="text-align:center"> <button type="button" onclick="location.href='@Url.Action("TumReferanslar", "ReferansVip")'" class="btn btn-link" style="background-color:dodgerblue; color:white; width:300px ; height:80px;">TÜM REFERANSLAR</button> </div>
+
+
+
+
+                    @*<a style="color:white;" href="@Url.Action("TumReferanslar","ReferansVip")">TÜM REFERANSLARIMIZ</a>*@
+
+
+
+                </div> <!-- End: .features-item -->
+                <!-- End: Some Feature Main Contant -->
+
+            </div> <!-- End: .row -->
+        </div> <!-- End: .container -->
+
+    </section>
+    <!-- End: Features Section 16
+
+
+
+
+           ================================== -->
+    <!-- Start: Features Section 16   FİLOMUZ (7)
+    ================================== -->
+    <section id="filomuz" class="features-section-16 section" style="background-image:url('../../images2/arkaplan/2 - filomuz.jpg');
+
+             background-position:center center;
+                    background-repeat:no-repeat;
+                    /*background-attachment:fixed;*/
+                    background-size:cover; ">
+
+
+        <div class="container">
+            <div class="row section-separator">
+
+                <!-- Start: Section Heading -->
+                <div class="section-header col-md-10 col-md-offset-1">
+                    @*<p class="sub-title">tools</p>*@
+                    <h2 class="section-heading">Filomuz</h2>
+                    <div class="section-header-separator"></div>
+                </div>
+                <!-- End: Section Heading -->
+
+
+                <div class="clearfix"></div>
+
+
+                <!-- Start: Some Feature Main Contant -->
+                <div class="part-2 col-xs-12">
+                    <div class="row" id="filomuzResimler">
+
+
+
+                        <script type="text/javascript">
+                            $.ajax({
+                                type: 'POST',
+                                url: 'ReferansVip/ListeleFilomuzJson',      // [HttpPost] olan actionview ismini yazıyoruz , buradan json formatında modeldeki verilerimiz geliyor
+                                contentType: "application/json; charset=utf-8",
+                                dataType: "json",
+                                success: function (data) {
+
+                                    $sayac = 0;
+                                    $.each(data, function (i, item) {
+
+
+                                        if (item.durum2 == 1) {
+                                            //$("#referansResimler").append(item.referansResimUrl);       // Buradaki dolarda Viewde işaret edilen div vs. nin idsi oluyor
+
+                                            $("#filomuzResimler").append("<div class='each-item col-sm-3 col xs-12'> <div>" + item.filoResimUrl + "style='border-radius:25px; height:200px; width:190px; border:1px solid; border-color:dodgerblue'" + "/>" + "</div> </div> ")
+
+                                    
+
+                                            $sayac++;
+                                            if ($sayac == 4) return false;
+
+                                        }
+
+                                    })
+                                }
+                            })
+                        </script>
+
+
+
+                    </div> <!-- End: .row -->
+
+                    <div class="row" style="text-align:center"> <button type="button" onclick="location.href='@Url.Action("TumFilomuz", "ReferansVip")'" class="btn btn-link" style="background-color:dodgerblue; color:white; width:300px ; height:80px;">TÜM FİLOMUZ</button> </div>
+
+
+
+
+                </div> <!-- End: .features-item -->
+                <!-- End: Some Feature Main Contant -->
+
+            </div> <!-- End: .row -->
+        </div> <!-- End: .container -->
+    </section>
+    <!-- End: Features Section 16 -->
+    <!-- Start: Features Section 12  REZERVASYON (8)
+    ================================== -->
+
+
+    <section id="rezervasyon" class="features-section-1 section bg-dark" style="background-image:url('../../images2/arkaplan/3 - rezervasyon.jpg');
+                    background-position:center center;
+                    background-repeat:no-repeat;
+                    /*background-attachment:fixed;*/
+                    background-size:cover;
+
+                    ">
+
+        <div class="container">
+            <div class="row section-separator sp-bottom">
+
+
+
+                <div class="section-header">
+
+                    <h2 class="section-heading" style="margin-top:90px;">Rezervasyon</h2>
+                    <div class="section-header-separator"></div>
+
+                </div>
+                <!-- End: Section Heading -->
+
+                <div class="part-1 col-xs-12">
+                    <div class="row">
+
+                        <div class="features-content col-sm-7 ">
+
+
+                            <div class="col-md-8 col-md-offset-2 col-sm-12" style="background-color:#232323; ">
+
+
+                                <div class="row" style="margin-left:5px;">
+
+                                    @using (Html.BeginForm("Anasayfa", "ReferansVip", FormMethod.Post, new { id = "111" }))
+                                    {
+
+                                        @Html.AntiForgeryToken()
+
+
+                                        <div style="background-color:#232323; opacity:0.8; margin-bottom:10px; margin-top:15px;  border-width:0px 0px 1px 0px; width:300px; height:20px; border-radius:4px;">
+
+
+                                            <input type="radio" name="yon" value="gidis">Gidiş
+                                            <input type="radio" name="yon" value="gidis-donus" style="margin-left:20px;">Gidiş-Dönüş<br>
+                                        </div>
+
+                                        <hr style="opacity:0.4;" />
+
+
+
+                                    <!-- Gidiş Tarihi -->
+                                        <div>
+                                            Gidiş Tarihi
+                                            <input type="date" name="gidisTarihi"  style="background-color:white; color:black; opacity:0.8; margin-bottom:10px;border-width:0px 0px 1px 0px; width:200px; height:40px; border-radius:4px; text-align:center; margin-left:10px;">
+                                        </div>
+
+
+
+
+
+                                        <div>
+                                            Dönüş Tarihi
+                                            <!-- Dönüş Tarihi -->
+                                            <input type="date" name="donusTarihi" style="background-color:white; color:black; opacity:0.8; margin-bottom:10px;border-width:0px 0px 1px 0px; width:200px; height:40px; border-radius:4px;text-align:center">
+                                        </div>
+
+
+
+                                        <!-- Transfer Alış Yeri -->
+                                        <div>
+                                            <hr style="opacity:0.4;" />
+                                            @*@Html.Label("Transfer Alış",new {@style="margin-top:15px;" }) <hr style="opacity:0.1;" />*@
+                                            @Html.Label("Nereden")
+                                            <select name="transferAlis" id="Transfer1" style="margin-left:21px; background-color:white; color:black; opacity:0.8; margin-bottom:10px;border-width:0px 0px 1px 0px; width:200px; height:40px; border-radius:4px;text-align:center">
+                                                <option value="Antalya_Havaalani">Antalya Havaalani</option>
+                                                <option value="Kundu">Kundu</option>
+                                                <option value="Belek_Bogazkent">Belek-Boğazkent</option>
+                                                <option value="Side_Gundogdu">Side-Gündoğdu</option>
+                                                <option value="Side_Colakli">Side-Çolaklı</option>
+                                                <option value="Side_Kumkoy">Side-Kumköy</option>
+                                                <option value="Manavgat">Manavgat</option>
+                                                <option value="Alanya">Alanya</option>
+                                                <option value="Merkez_Konyaalti">Merkez-Konyaaltı</option>
+                                                <option value="Merkez_Lara">Merkez-Lara</option>
+                                                <option value="Kemer_Beldibi">Kemer-Beldibi</option>
+                                                <option value="Kemer_Goynuk">Merkez-Göynük</option>
+                                                <option value="Kiris">Kiriş</option>
+                                                <option value="Camyuva">Çamyuva</option>
+                                                <option value="Tekirova">Tekirova</option>
+                                                <option value="Adrasan">Adrasan</option>
+                                            </select>
+                                        </div>
+
+                                        <div>
+                                            <!-- Transfer Teslim Yeri -->
+                                            @*@Html.Label("Transfer Bırakış", new { @style = "margin-top:15px; margin-bottom:0px;" }) <hr style="opacity:0.1;" />*@
+                                            @Html.Label("Nereye")
+                                            <select name="transferBirakis" id="Transfer2" style="margin-left:29px; background-color:white; color:black; opacity:0.8; margin-bottom:10px;border-width:0px 0px 1px 0px; width:200px; height:40px; text-align:center;border-radius:4px;text-align:center">
+                                                <option value="Antalya_Havaalani">Antalya Havaalani</option>
+                                                <option value="Kundu 60TL">Kundu 60TL</option>
+                                                <option value="Belek_Bogazkent 110TL">Belek-Boğazkent 110TL</option>
+                                                <option value="Side_Gundogdu 130TL">Side-Gündoğdu 130TL</option>
+                                                <option value="Side_Colakli 130TL">Side-Çolaklı 130TL</option>
+                                                <option value="Side_Kumkoy 130TL">Side-Kumköy 130TL</option>
+                                                <option value="Manavgat 150TL">Manavgat 150TL</option>
+                                                <option value="Alanya 200TL">Alanya 200TL</option>
+                                                <option value="Merkez_Konyaalti 60TL">Merkez-Konyaaltı 60TL</option>
+                                                <option value="Merkez_Lara 60TL">Merkez-Lara 60TL</option>
+                                                <option value="Kemer_Beldibi 120TL">Kemer-Beldibi 120TL</option>
+                                                <option value="Kemer_Goynuk 120TL">Merkez-Göynük 120TL</option>
+                                                <option value="Kiris 130TL">Kiriş 130TL</option>
+                                                <option value="Camyuva 150TL">Çamyuva 150TL</option>
+                                                <option value="Tekirova 150TL">Tekirova 150TL</option>
+                                                <option value="Adrasan 170TL">Adrasan 170TL</option>
+                                            </select>
+                                        </div>
+                                        <hr style="opacity:0.4" />
+
+                                        <div>
+                                            @Html.Label("Yetişkin")
+                                            <select name="yetiskinSayisi" id="Yetiskin" style="background-color:white; color:black; opacity:0.8; margin-bottom:10px;border-width:0px 0px 1px 0px; width:100px; height:40px; border-radius:4px;text-align:center">
+                                                <option value="1">1</option>
+                                                <option value="2">2</option>
+                                                <option value="3">3</option>
+                                                <option value="4">4</option>
+                                                <option value="5">5</option>
+                                                <option value="6">6</option>
+                                                <option value="7">7</option>
+                                                <option value="8">8</option>
+                                                <option value="9">9</option>
+                                                <option value="10">10</option>
+                                                <option value="11">11</option>
+                                                <option value="12">12</option>
+                                                <option value="13">13</option>
+                                                <option value="14">14</option>
+                                                <option value="15">15</option>
+                                                <option value="16">16</option>
+                                                <option value="17">17</option>
+                                                <option value="18">18</option>
+                                                <option value="19">19</option>
+                                                <option value="20">20</option>
+                                                <option value="30">30</option>
+                                                <option value="31">31</option>
+                                                <option value="32">32</option>
+                                                <option value="33">33</option>
+                                                <option value="34">34</option>
+                                                <option value="35">35</option>
+                                                <option value="36">36</option>
+                                                <option value="37">37</option>
+                                                <option value="38">38</option>
+                                                <option value="39">39</option>
+                                                <option value="40">40</option>
+                                            </select>
+
+
+
+                                            @Html.Label("Çocuk", new { @style = "margin-left:20px;" })
+                                            <select name="cocukSayisi" id="Cocuk" style="background-color:white; color:black; opacity:0.8; margin-bottom:10px;border-width:0px 0px 1px 0px; width:100px; height:40px; border-radius:4px;text-align:center">
+                                                <option value="1">1</option>
+                                                <option value="2">2</option>
+                                                <option value="3">3</option>
+                                                <option value="4">4</option>
+                                                <option value="5">5</option>
+                                                <option value="6">6</option>
+                                                <option value="7">7</option>
+                                                <option value="8">8</option>
+                                                <option value="9">9</option>
+                                                <option value="10">10</option>
+                                                <option value="11">11</option>
+                                                <option value="12">12</option>
+                                                <option value="13">13</option>
+                                                <option value="14">14</option>
+                                                <option value="15">15</option>
+                                                <option value="16">16</option>
+                                                <option value="17">17</option>
+                                                <option value="18">18</option>
+                                                <option value="19">19</option>
+                                                <option value="20">20</option>
+                                                <option value="30">30</option>
+                                                <option value="31">31</option>
+                                                <option value="32">32</option>
+                                                <option value="33">33</option>
+                                                <option value="34">34</option>
+                                                <option value="35">35</option>
+                                                <option value="36">36</option>
+                                                <option value="37">37</option>
+                                                <option value="38">38</option>
+                                                <option value="39">39</option>
+                                                <option value="40">40</option>
+                                            </select>
+
+
+                                        </div>
+                                        <hr style="opacity:0.4" />
+
+                                        <!-- Name -->
+                                        <input name="adSoyadT" class="form-control" type="text" placeholder="Ad&Soyad*/Name&Surname*" required="" style="background-color:#232323; color:white; opacity:0.8; margin-bottom:10px;border-width:0px 0px 1px 0px;">
+                                        <!-- Email -->
+                                        <input name="emailT" class="form-control" type="text" placeholder="Email*" required="" style="background-color:#232323;opacity:0.8;margin-bottom:10px;border-width:0px 0px 1px 0px;">
+                                        <!-- Tel -->
+                                        <input name="telNoT" class="form-control" type="text" placeholder="Telefonununuz*/Telephone* " required="" style="background-color:#232323;opacity:0.8;margin-bottom:10px;border-width:0px 0px 1px 0px;">
+
+                             
+
+
+
+                                        <div class="btn-form text-center col-xs-12" style="margin-top:30px; margin-bottom:30px;">
+                                            <input type="submit" class="btn btn-fill right-icon" value="REZERVASYON YAP"><hr />
+                                            <div  id="W2791" style="margin-left:84px;"></div>
+                                            @if (ViewBag.Success == true)
+
+                                            {
+                                                <span style="color:dodgerblue"><b> Rezervasyon İşleminiz Başarıyla Tamamlanmıştır. &#x2714;</b></span>
+
+                                                <script>
+                                                    $(document).ready(function(){
+
+
+                                                        {
+                                                            var rezkod = "";
+                                                            var possible = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789";
+
+                                                            for( var i=0; i < 8; i++ )
+                                                                rezkod += possible.charAt(Math.floor(Math.random() * possible.length));
+
+                                                        }
+                                         
+                                                                                               
+                                                        //document.getElementById("xyz3").innerHTML ="Rezervasyon kodunuz:" + rezkod;
+
+                                                            $("#xyz1").fadeIn("slow");
+                                                            $("#xyz2").fadeIn(4000);
+                                                            $("#xyz3").fadeIn(8000);
+
+                                                    });
+                                                </script>
+
+
+                                            }
+
+                                        </div>
+
+
+
+                                    }
+
+
+                                </div> <!-- End: .row -->
+                            </div> <!-- End: .comment-form -->
+
+                        </div> <!-- End: .features-content -->
+                        <!-- Divin resimli olan sağ tarafı-->
+                        @*<div class="features-image col-sm-4">*@
+
+
+
+                        <div class="col-sm-5" style="margin-top:300px; ">
+                            <img src="~/images2/Vip_Sprinter_2.jpg" alt="Event Image" class="" style="border:1px solid; border-color:dodgerblue; height:350px; width:450px; max-width:100%; height:auto;  ">
+                        </div>
+
+
+
+                    </div> <!-- End: .row -->
+                </div> <!-- End: .part-1 -->
+
+            </div> <!-- End: .row -->
+        </div> <!-- End: .container -->
+    </section>
+
+
+    <!-- Start: Features Section 13  REZERVASYON SON
+      ================================== -->
+    <!-- Start: Features Section 12  İLETİŞİM (8)
+      ================================== -->
+    <section id="iletisim" class="features-section-12 section bg-dark" @*id="contact"*@
+             style="background-image:url('../../images2/arkaplan/4-iletisim.jpg');
+                    background-position:center center;
+                    background-repeat:no-repeat;
+                    /*background-attachment:fixed;*/
+                    background-size:cover;
+                     ">
+        <div class="container">
+            <div class="row section-separator">
+
+                <!-- Start: Section Heading -->
+                <div class="section-header col-md-8 col-md-offset-2">
+                    @*<p class="sub-title">Contact</p>*@
+                    <h2 class="section-heading" style="color:dodgerblue">İLETİŞİM</h2>
+                    <div class="section-header-separator"></div>
+                </div>
+                <!-- End: Section Heading -->
+
+                <div class="clearfix"></div>
+
+                <address class="contact-address col-md-8 col-md-offset-2 col-sm-12">
+
+
+
+                    <div class="contact-address-inner" style="margin-bottom:20px; opacity:0.8;">
+
+                        <div class="col-sm-12 col-xs-12">
+                            <div class="row">
+
+                                <div class="media each-address">
+
+                                    <div class="media-left icon-outer-border">
+                                        <i class="fa fa-home-house-streamline"></i>
+                                    </div>
+                                    <div class="media-body">
+                                        <p>Referans Turizm Taşımacılık Ltd. Şti.</p>
+
+                                    </div>
+
+                                </div> <!-- End: .each-address -->
+
+                            </div>
+                        </div> <!-- End: .col-sm-4 -->
+
+                    </div>
+
+
+                    <div class="contact-address-inner" style="opacity:0.8;">
+
+
+
+                        <div class="col-sm-4 col-xs-12">
+                            <div class="row">
+
+                                <div class="media each-address">
+
+                                    <div class="media-left icon-outer-border">
+                                        <i class="fa fa-home-house-streamline"></i>
+                                    </div>
+                                    <div class="media-body">
+                                        <p>28/1 Muratpaşa</p>
+                                        <p>Antalya/TÜRKİYE</p>
+                                    </div>
+
+                                </div> <!-- End: .each-address -->
+
+                            </div>
+                        </div> <!-- End: .col-sm-4 -->
+                        <div class="col-sm-4 col-xs-12">
+                            <div class="row">
+
+                                <div class="media each-address">
+
+                                    <div class="media-left icon-outer-border">
+                                        <i class="fa fa-iphone-streamline"></i>
+                                    </div>
+                                    <div class="media-body">
+                                        <a href="callto:+(90)507 617 3134">+(90)507 617 3134</a><br>
+                                        <a href="callto:+(90)553 469 1891">+(90)553 469 1891</a>
+                                    </div>
+
+                                </div> <!-- End: .each-address -->
+
+                            </div>
+                        </div> <!-- End: .col-sm-4 -->
+                        <div class="col-sm-4 col-xs-12">
+                            <div class="row">
+
+                                <div class="media each-address">
+
+                                    <div class="media-left icon-outer-border">
+                                        <i class="fa fa-email-mail-streamline"></i>
+                                    </div>
+                                    <div class="media-body">
+                                        <a href="mailto:info@referansvip.com">info@referansvip.com</a><br>
+                                        <a href="http://www.facebook.com/referansvip">Facebook/ReferansVip</a>
+                                    </div>
+
+                                </div> <!-- End: .each-address -->
+
+                            </div>
+                        </div> <!-- End: .col-sm-4 -->
+                    </div> <!-- End: .contact-address-inner -->
+                </address> <!-- End: .contact-address -->
+                @*<div class="clearfix"></div>*@
+
+
+
+                <div class="comment-form col-md-8 col-md-offset-2 col-sm-12">
+                    @{
+                        if (ViewBag.Success == false)
+                        {
+                            <span style="color:dodgerblue"><b> Mesajınız başarıyla gönderilmiştir. &#x2714;</b></span>
+
+                            <script>
+                                                    $(document).ready(function(){
+
+                                                            $("#asd1").fadeIn("slow");
+                                                            $("#asd2").fadeIn(4000);
+                                                    });
+                            </script>
+
+
+
+
+
+                        }
+
+                    }
+                    <hr style="border:1px solid dodgerblue; opacity:0.4;">
+                    <div class="row">
+
+                        @using (Html.BeginForm("Anasayfa", "ReferansVip", FormMethod.Post, new { id = "100" }))
+                        {
+                            @Html.AntiForgeryToken()
+
+                            <div class="form-group">
+                                <div class="col-md-5 col-sm-6 col-xs-12">
+
+
+
+
+                                    <!-- Name -->
+                                    <input name="name" class="form-control" type="text" placeholder="Ad&Soyad*/Name&Surname*" required="" style="background-color:#232323; opacity:0.8; margin-bottom:10px;border-width:0px 0px 1px 0px;">
+                                    <!-- Email -->
+                                    <input name="email" class="form-control" type="text" placeholder="Email*" required="" style="background-color:#232323;opacity:0.8;margin-bottom:10px;border-width:0px 0px 1px 0px;">
+                                    <!-- Subject -->
+                                    <input name="subject" class="form-control" type="text" placeholder="Konu*/Subject*" style="background-color:#232323;opacity:0.8;margin-bottom:10px;border-width:0px 0px 1px 0px;">
+                                    <!-- Tel -->
+                                    <input name="telno" class="form-control" type="text" placeholder="Telefonununuz*/Telephone*" required="" style="background-color:#232323;opacity:0.8;margin-bottom:10px;border-width:0px 0px 1px 0px;">
+                                </div>
+                            </div>
+
+
+                                   <!-- Mesaj -->
+                            <div class="col-md-7 col-sm-6 col-xs-12">
+                                <div class="form-group">
+                                    <input name="message" class="form-control" type="text" placeholder="Mesajınız*/YourMessage*" required="" style="background-color:#232323;opacity:0.8; height:167px; border-width:0px 0px 1px 0px; ">
+
+                                </div>
+                            </div>
+
+                            <!-- Submit Button -->
+                            <div class="btn-form text-center col-xs-12" style="margin-top:30px;">
+                                <input type="submit" class="btn btn-fill right-icon" value="MESAJI GÖNDER">
+                            </div>
+                           
+                        }
+
+                    </div> <!-- End: .row -->
+                </div> <!-- End: .comment-form -->
+
+            </div> <!-- End: .row -->
+        </div> <!-- End: .container -->
+    </section>
+    <!-- End: Features Section 12
+
+
+
+
+    ================================== -->
+    <!-- Start: Footer Section 1  FİNAL KISMI
+    ================================== -->
+    <footer class="footer-section-1">
+        <div class="container">
+            <div class="row section-separator">
+
+                <div class="about col-md-4 col-sm-12">
+
+                    <a href="index.html" class="logo-link">
+                        <img src="~/images2/referansviplogo.png" alt="" class="img-responsive logo" style="width:180px;">
+                    </a>
+                    <p>Kaliteyi Huzurla Birleştirdik</p>
+                    @*<ul class="nav social-icon">
+                            <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                            <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+                            <li><a href="#"><i class="fa fa-linkedin-square"></i></a></li>
+                            <li><a href="#"><i class="fa fa-pinterest-p"></i></a></li>
+                        </ul>*@
+                </div> <!-- End: .about -->
+
+                <div class="other-link col-md-6 col-md-offset-2 col-sm-12">
+                    <div class="row">
+
+                        <div class="each-section col-sm-4 col-xs-12">
+
+                            <h4 class="title">İLETİŞİM</h4>
+                            <ul class="nav">
+                                <li>C +(90)507 617 3134</li>
+                                <li>T +(90)553 469 1891</li>
+                                <li><a href="#">E info@referansvip.com</a></li>
+                                <li><a href="https://www.facebook.com/referansvip" style="color:dodgerblue">f Referansvip</a></li>
+                            </ul>
+
+                        </div> <!-- End: .each-section -->
+
+
+                        <div class="each-section col-sm-4 col-xs-12">
+
+                            <h4 class="title">DESTEK</h4>
+                            <ul class="nav">
+                                <li><a href="#iletisim">İletişim</a></li>
+                                <li><a href="#rezervasyon">Rezervasyon</a></li>
+                            </ul>
+
+                        </div> <!-- End: .each-section -->
+                        <div class="each-section col-sm-4 col-xs-12">
+
+                            <h4 class="title">HAKKIMIZDA</h4>
+                            <ul class="nav">
+                                <li><a href="#hakkimizda">Hakkımızda</a></li>
+                                <li><a href="#hizmetlerimiz">Hizmetlerimiz</a></li>
+                                <li><a href="#referanslar">Referanslar</a></li>
+                            </ul>
+
+                        </div> <!-- End: .each-section -->
+
+                    </div>
+                </div> <!-- End: .other-link -->
+
+                <div class="col-xs-12">
+                    <hr class="section-separator-line"> <!-- Separatior Two Section -->
+                </div>
+
+                <div class="copyright col-xs-12">
+                    <p class="title">&copy; 2016 <b style="color:dodgerblue">karamedyatakip</b> All Rights Reserved</p>
+                </div>
+
+            </div><!-- End: .row .footer-body .section-separator  -->
+        </div> <!-- End: .container  -->
+    </footer>
+    <!-- End: Footer Section 1
+            ================================== -->
+    <!-- SCRIPTS
+    ========================================-->
+    <script src="~/Scripts/js/plagin-js/jquery-1.11.3.js"></script>
+    <script src="~/Scripts/bootstrap/js/bootstrap.min.js"></script>
+    <script src="~/Scripts/js/plagin-js/jquery.ajaxchimp.min.js"></script>
+    <script src="~/Scripts/js/plagin-js/jquery.scrollTo.min.js"></script>
+    <script src="~/Scripts/js/plagin-js/jquery.localScroll.min.js"></script>
+    <script src="~/Scripts/js/plagin-js/jquery.nav.js"></script>
+    <script src="~/Scripts/js/plagin-js/swiper.jquery.min.js"></script>
+    <script src="~/Scripts/js/plagin-js/jquery.countdown.js"></script>
+    <script src="http://maps.google.com/maps/api/js?sensor=true"></script>
+
+    <!-- Custom Script
+    ==========================================-->
+    <script src="~/Scripts/js/custom-scripts.js"></script>
+  
+      @*Döviz kuru için*@
+    <script type="text/javascript" src="http://paracevirici.com/servis/widget/widget.js"></script>
+
+    <script type="text/javascript">
+
+$(function(){
+$("#W2791").paraceviriciWidget({
+	widget:"boxline",
+	wData:{
+		category:0,
+		currency:"USD-EUR"
+	},
+	wSize:{
+		wWidth:200,
+		wHeight:35
+	},
+	wBase: {
+		wLanguage: "tr",
+		wBg: "white"
+	},
+	wFrame: {
+		wB: 1,
+		wBC: "dodgerblue",
+		wBR: ""
+	}
+});
+});
+
+    </script>
+
+
+    @*input type date için firefox ve explorer düzeltmesi*@
+    <!-- cdn for modernizr, if you haven't included it already -->
+    <script src="http://cdn.jsdelivr.net/webshim/1.12.4/extras/modernizr-custom.js"></script>
+    <!-- polyfiller file to detect and load polyfills -->
+    <script src="http://cdn.jsdelivr.net/webshim/1.12.4/polyfiller.js"></script>
+    <script>
+  webshims.setOptions('waitReady', false);
+  webshims.setOptions('forms-ext', {types: 'date'});
+  webshims.polyfill('forms forms-ext');
+    </script>
+
+
+    <script type="text/javascript">
+
+    var data = @Html.Raw(JsonConvert.SerializeObject(this.Model));
+
+    </script>
+
+
+
+
+
+</body>
+
+</html>

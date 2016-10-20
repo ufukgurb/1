@@ -1,0 +1,101 @@
+﻿@model IEnumerable<ena3.Models.ResimFilomuz>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>FİLOLAR</h2>
+
+<p>
+    @Html.ActionLink("Yeni Filo Oluştur", "YeniFilo","ReferansVip")
+</p>
+<table class="table">
+    <tr>
+        @*<th>
+            @Html.DisplayNameFor(model => model.filoResimUrl)
+        </th>*@
+        <th>
+            @Html.DisplayNameFor(model => model.aracAdi)
+        </th>
+     
+        <th>
+            @Html.DisplayNameFor(model => model.ozellik1)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.ozellik2)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.ozellik3)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.ozellik4)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.ozellik5)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.ozellik6)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.ozellik7)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.ozellik8)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.durum)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.durum2)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        @*<td>
+            @Html.DisplayFor(modelItem => item.filoResimUrl)
+        </td>*@
+        <td>
+            @Html.DisplayFor(modelItem => item.aracAdi)
+        </td>
+  
+        <td>
+            @Html.DisplayFor(modelItem => item.ozellik1)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.ozellik2)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.ozellik3)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.ozellik4)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.ozellik5)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.ozellik6)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.ozellik7)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.ozellik8)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.durum)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.durum2)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.ID }) |
+            @Html.ActionLink("Details", "Details", new { id=item.ID }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.ID })
+        </td>
+    </tr>
+}
+
+</table>
